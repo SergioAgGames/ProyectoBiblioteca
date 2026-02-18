@@ -4,23 +4,10 @@ public class SpriteInteraction : MonoBehaviour
 {
     public GameObject objetoBrillo;
 
-    void Awake()
+    public void Prueba()
     {
-        
-            objetoBrillo.SetActive(false);
-    }
 
-    void OnMouseEnter()
-    {
-       
-        
-            objetoBrillo.SetActive(true);
-    }
-
-    void OnMouseExit()
-    {
-        Debug.Log("HA salio EL rtoan");
-        objetoBrillo.SetActive(false);
+        Debug.Log("Se ha hehco click");
     }
 }
 
