@@ -5,6 +5,9 @@ public class TextController : MonoBehaviour
 {
     [SerializeField, TextArea (4,6)] private string[] dialogueLines;
     [SerializeField] private GameObject textPanel;
+    [SerializeField] private GameObject namePanel;
+    [SerializeField] private GameObject spritePanel;
+
     [SerializeField] private TMP_Text dialogueText;
 
     private bool dialogueStarted = false;
@@ -21,6 +24,8 @@ public class TextController : MonoBehaviour
         textPanel.SetActive(true);
         lineIndex = 0;
         StartCoroutine(ShowLine());
+        namePanel.SetActive(true);
+        spritePanel.SetActive(true);
     }
     private IEnumerator ShowLine()
     {
@@ -44,6 +49,8 @@ public class TextController : MonoBehaviour
         {
             dialogueStarted=false;
             textPanel.SetActive(false);
+            namePanel.SetActive(false);
+            spritePanel.SetActive(false);
 
         }
     }
