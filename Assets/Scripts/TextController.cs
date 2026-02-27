@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections;
 using UnityEngine.UI; 
 using Microsoft.Unity.VisualStudio.Editor;
+using UnityEngine.EventSystems;
 
 public class TextController : MonoBehaviour
 {
@@ -20,11 +21,14 @@ public class TextController : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image characterImage;
 
 
+    [SerializeField] private Collider2D statueCollider;
+
     private int lineIndex;
     private int characternamesIndex;
     private int spriteIndex;
     float typingTime = 0.05f;
 
+    private bool textStarted = false;
     void Update()
     {
         
@@ -32,13 +36,17 @@ public class TextController : MonoBehaviour
 
     public void StartDialogue()
     {
-       
+        textStarted = true;
+   
         textPanel.SetActive(true);
         lineIndex = 0;
         characternamesIndex = 0;
         spriteIndex = 0;
 
+        statueCollider.enabled = false;
         StartCoroutine(ShowLine());
+    
+        
   
     }
     private IEnumerator ShowLine()
@@ -57,6 +65,7 @@ public class TextController : MonoBehaviour
       
         spriteIndex++;
 
+       
 
         if (lineIndex < dialogueLines.Length) 
         {
@@ -67,8 +76,8 @@ public class TextController : MonoBehaviour
         {
            
             textPanel.SetActive(false);
-          
 
+            statueCollider.enabled = true;
         }
     }
     public void UpdateCharacterInfo()

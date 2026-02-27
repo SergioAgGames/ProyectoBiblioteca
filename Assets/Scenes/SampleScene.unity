@@ -516,6 +516,7 @@ MonoBehaviour:
   dialogueText: {fileID: 863433772}
   nameText: {fileID: 808895029}
   characterImage: {fileID: 1981029270}
+  statueCollider: {fileID: 122719708}
 --- !u!1 &459862526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,7 +2005,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b5520c856f8113f4a9a095735b69dc35, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2f318d1785e8427419875f0e0b6f5c5b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.692
   m_Pitch: 1
