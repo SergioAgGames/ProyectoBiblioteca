@@ -1,18 +1,30 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.UI; 
+using Microsoft.Unity.VisualStudio.Editor;
+
 public class TextController : MonoBehaviour
 {
     [SerializeField, TextArea (4,6)] private string[] dialogueLines;
+    [SerializeField] private string[] characterName;
+    [SerializeField] private Sprite[] characterSprite;
+     
+
     [SerializeField] private GameObject textPanel;
     [SerializeField] private GameObject namePanel;
     [SerializeField] private GameObject spritePanel;
 
     [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private TMP_Text nameText;
+    [SerializeField] private UnityEngine.UI.Image characterImage;
 
-    private bool dialogueStarted = false;
+
     private int lineIndex;
+    private int characternamesIndex;
+    private int spriteIndex;
     float typingTime = 0.05f;
+
     void Update()
     {
         
@@ -20,12 +32,14 @@ public class TextController : MonoBehaviour
 
     public void StartDialogue()
     {
-        dialogueStarted = true;
+       
         textPanel.SetActive(true);
         lineIndex = 0;
+        characternamesIndex = 0;
+        spriteIndex = 0;
+
         StartCoroutine(ShowLine());
-        namePanel.SetActive(true);
-        spritePanel.SetActive(true);
+  
     }
     private IEnumerator ShowLine()
     {
@@ -36,9 +50,13 @@ public class TextController : MonoBehaviour
             yield return new WaitForSeconds(typingTime);
         }
     }
+
     public void nextLine()
     {
         lineIndex++;
+      
+        spriteIndex++;
+
 
         if (lineIndex < dialogueLines.Length) 
         {
@@ -47,11 +65,23 @@ public class TextController : MonoBehaviour
         }
         else
         {
-            dialogueStarted=false;
+           
             textPanel.SetActive(false);
-            namePanel.SetActive(false);
-            spritePanel.SetActive(false);
+          
 
+        }
+    }
+    public void UpdateCharacterInfo()
+    {
+     
+        if (characterName.Length > lineIndex)
+        {
+            nameText.text = characterName[lineIndex];
+        }
+
+        if (characterSprite.Length > lineIndex)
+        {
+            characterImage.sprite = characterSprite[lineIndex];
         }
     }
 }
