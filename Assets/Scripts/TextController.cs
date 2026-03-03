@@ -67,21 +67,34 @@ public class TextController : MonoBehaviour
        
         Debug.Log(lineIndex.ToString());
 
-        if (lineIndex < dialogueLines.Length) 
+        if (lineIndex < dialogueLines.Length)
         {
 
             StartCoroutine(ShowLine());
             answerController.ActivateAnswerPanel(lineIndex);
 
-            if(answerController.correctText == false)
-                {
+            if (answerController.correctText == false)
+            {
 
                 continueButton.interactable = false;
                 Debug.Log("Boton deshabilitado");
 
             }
-            
-         
+            // esto es una linea que me estoy inventaod para no ahcer na el rato que me queda a ver ya slo quedan como 15 mins asi que estoamo s vbiend
+
+
+            //jbvxojfso
+            //ajibshib
+
+            /*To do list
+            -minimap diferentes ubicaciones,
+            -textos no repetibles enteros
+            -menu inicial
+            -escena creditos
+            -sistema que guarde avance entre escenas: podria ser ago como un bool por zona que se activa cuando la completas, cuando teines todos completados 
+
+            */
+
 
 
 
