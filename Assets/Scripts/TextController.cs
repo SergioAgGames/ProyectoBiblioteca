@@ -29,11 +29,9 @@ public class TextController : MonoBehaviour
     float typingTime = 0.05f;
 
     private bool textStarted = false;
-    void Update()
-    {
-        
-    }
 
+
+    [SerializeField] private AnswerController answerController;
     public void StartDialogue()
     {
         textStarted = true;
@@ -66,11 +64,13 @@ public class TextController : MonoBehaviour
         spriteIndex++;
 
        
+        Debug.Log(lineIndex.ToString());
 
         if (lineIndex < dialogueLines.Length) 
         {
 
             StartCoroutine(ShowLine());
+            answerController.CheckForAnswerPanel(lineIndex);
         }
         else
         {
@@ -93,4 +93,6 @@ public class TextController : MonoBehaviour
             characterImage.sprite = characterSprite[lineIndex];
         }
     }
+
+
 }
