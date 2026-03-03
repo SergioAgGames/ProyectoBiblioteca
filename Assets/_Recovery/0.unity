@@ -538,7 +538,6 @@ MonoBehaviour:
   inputText: {fileID: 1561386121}
   playerAnswer: HOLA
   correctText: 0
-  textController: {fileID: 122719709}
 --- !u!1 &459862526
 GameObject:
   m_ObjectHideFlags: 0

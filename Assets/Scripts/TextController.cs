@@ -19,6 +19,7 @@ public class TextController : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private UnityEngine.UI.Image characterImage;
+    public Button continueButton;
 
 
     [SerializeField] private Collider2D statueCollider;
@@ -70,7 +71,20 @@ public class TextController : MonoBehaviour
         {
 
             StartCoroutine(ShowLine());
-            answerController.CheckForAnswerPanel(lineIndex);
+            answerController.ActivateAnswerPanel(lineIndex);
+
+            if(answerController.correctText == false)
+                {
+
+                continueButton.interactable = false;
+                Debug.Log("Boton deshabilitado");
+
+            }
+            
+         
+
+
+
         }
         else
         {
