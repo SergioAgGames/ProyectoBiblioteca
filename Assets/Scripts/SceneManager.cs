@@ -10,7 +10,10 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-
+    public void ExitGame()
+    {
+        Application.Quit(); 
+    }
 }
 /*
 TODO LIST:
