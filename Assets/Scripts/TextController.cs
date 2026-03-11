@@ -94,6 +94,11 @@ public class TextController : MonoBehaviour
             textPanel.SetActive(false);
 
             statueCollider.enabled = true;
+
+            // Diálogo terminado  marcar esta escena como completada
+            string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            GameController.Instance?.CompleteScene(currentScene);
+
         }
     }
     public void UpdateCharacterInfo()

@@ -10,4 +10,12 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+
 }
+/*
+TODO LIST:
+-MUSICA MAS ANIMADA
+-RETOCAR FOTOS INFANTIL
+-SCRIPT CONTROLADOR DE ESCENAS COMPLETADAS
+-SCRIPT CONTROLADOR MUSICA 
+*/
