@@ -80,13 +80,7 @@ public class TextController : MonoBehaviour
                 Debug.Log("Boton deshabilitado");
 
             }
-            /*To do list
-            -minimap diferentes ubicaciones,
-            -textos no repetibles enteros
-            -menu inicial
-            -escena creditos
-            -sistema que guarde avance entre escenas: podria ser ago como un bool por zona que se activa cuando la completas, cuando teines todos completados el minimapa te falsea y te lleva a una escena inicial v2 para finalizar el juego.
-            */
+          
         }
         else
         {
