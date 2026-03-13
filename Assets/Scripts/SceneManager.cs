@@ -17,8 +17,5 @@ public class ScenesManager : MonoBehaviour
 }
 /*
 TODO LIST:
--MUSICA MAS ANIMADA
--RETOCAR FOTOS INFANTIL
-
 -SCRIPT CONTROLADOR MUSICA 
 */
