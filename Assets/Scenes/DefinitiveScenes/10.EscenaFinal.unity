@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FadeIn
   canvasGroup: {fileID: 53829746}
   duration: 4
+  finalescenetext: {fileID: 53829752}
 --- !u!114 &53829748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,9 +266,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fc9035edb62284bb690cf243cfb5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinalEsceneText
-  dialogueLines: []
-  characterName: []
-  characterSprite: []
+  dialogueLines:
+  - "Cuantos personajes se hab\xEDan escapado se\xF1or Federico."
+  - " 8 amigo m\xEDo."
+  - " \xA1Genial! Solo nos falta uno por encontrar, \xBFd\xF3nde crees que pueda
+    estar?"
+  - En realidad J.J. hay algo que tienes que saber
+  - "\xBFA qu\xE9 se refiere?"
+  - "J.J., \xBFconoces a Federico Garc\xEDa Lorca?"
+  - " \xA1Claro que s\xED! Fue un escritor muy reconocido de la generaci\xF3n del
+    27."
+  - "Espere un momento\u2026"
+  - "Ya lo vas comprendiendo\u2026 Yo soy el \xFAltimo que falta"
+  - " Se\xF1or Lorca\u2026 \xBFPor qu\xE9 no me lo dijo usted antes?"
+  - "No vi el momento J.J., siento dec\xEDrtelo de esta forma, pero es necesario."
+  - "No\u2026"
+  - "No est\xE9s triste J.J., es lo correcto."
+  - "Tr\xE1eme mi libro y volver\xE9 a formar parte de su historia."
+  - "Mi libro es \u201CEl Joven Lorca\u201D, escrito por Luna Bruna. Su c\xF3digo
+    es I-MIS\r\nBRU Jov."
+  - "Aqu\xED tiene se\xF1or."
+  - 'Perfecto. Muchas gracias por tu ayuda J.J., sin ti quien sabe si hubiese podido
+
+    recuperarlos
+    a todos.'
+  - "No es molestia, pero\u2026 una \xFAltima cosa."
+  - Dime lo que quieras
+  - "\xBFPor qu\xE9 sali\xF3 usted tambi\xE9n de su libro?"
+  - "J.J., sal\xED para ayudar a devolver las cosas a la normalidad."
+  - "Los libros son algo m\xE1s que historias."
+  - "Son sue\xF1os, aprendizaje y cultura. No quer\xEDa que eso se perdiera."
+  - Se que te encanta leer J.J, eres un chico muy especial.
+  - "Nunca permitas que nadie te quite esa ilusi\xF3n."
+  - "Jam\xE1s se\xF1or, fue un placer pasar este d\xEDa con usted."
+  - "El honor fue m\xEDo J.J., cuando quieras verme, \xA1ya sabes donde puedes\r\nencontrarme!"
+  characterName:
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - Lorca
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - Lorca
+  - Lorca
+  - Lorca
+  - Lorca
+  - J.J
+  - Lorca
+  characterSprite:
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   textPanel: {fileID: 53829745}
   namePanel: {fileID: 1636722626}
   spritePanel: {fileID: 1148325322}

@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class FadeIn : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private float duration = 1.5f; // Tiempo en segundos
-    FinalEsceneText finalescenetext;
+    [SerializeField] private FinalEsceneText finalescenetext;
 
     void Start()
     {
