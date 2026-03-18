@@ -11,6 +11,39 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DefinitiveScenes/1.0.MenuScene.unity
     guid: 83a9a0935023da647bccf78151caf5bc
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/2.0.BibliotecaExterior.unity
+    guid: 4ac709a5ffa46044c95ce3fbc17cad0e
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/2.1.BibliotecaInterior.unity
+    guid: 01251ac56fc95c045b4b68effcf007a5
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/3.Catedral.unity
+    guid: c53c60c7634b406419203034eb8eb1ca
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/4.Castillo.unity
+    guid: 9d9350bedeb8c2046b88be8d08ce4b87
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/5.0.ParralExterior.unity
+    guid: d46cae5f2282d0b46b76d69b6ab70131
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/5.1.ParrallInterior.unity
+    guid: 46c6740c7566da84e80d9b6130a712ba
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/6.Monasterio.unity
+    guid: 69f04ca6612ef1b43ab7b934fcc2afb0
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/7.0.ArcoSM.unity
+    guid: 40c762d17472cbf4d831181a14048aaa
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/8.0.MuseoEvolucion.unity
+    guid: 80d3d987e8b8f6743a92f326e8540a07
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/9.0.PlazaCid.unity
+    guid: cc8ba3bc3f826da4cbbdf621838d7a36
+  - enabled: 1
+    path: Assets/Scenes/DefinitiveScenes/10.EscenaFinal.unity
+    guid: 747a8ef707f058e4aa3ec72afa088260
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -3,7 +3,7 @@ using TMPro;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems; // Quité Microsoft.Unity.VisualStudio.Editor que no es necesario aquí
-
+using UnityEngine.SceneManagement;
 public class TextController : MonoBehaviour
 {
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
@@ -33,6 +33,14 @@ public class TextController : MonoBehaviour
     private bool showLine = false;
     [SerializeField] private AnswerController answerController;
 
+
+
+
+    [SerializeField] private bool cambiarEscenaAlTerminar = false;
+    [SerializeField] private string nombreSiguienteEscena;
+    [SerializeField] private Image blackFadeImage; // Arrastra aquí tu FadeImage
+    [SerializeField] private float fadeSpeed = 1f;
+
     public void StartDialogue()
     {
         textStarted = true;
@@ -48,7 +56,6 @@ public class TextController : MonoBehaviour
 
     public void nextLine()
     {
-        // NUEVO: Apagamos el botón nada más pulsarlo para evitar el "doble clic"
         continueButton.interactable = false;
 
         lineIndex++;
@@ -59,17 +66,26 @@ public class TextController : MonoBehaviour
         if (lineIndex < dialogueLines.Length)
         {
             StartCoroutine(ShowLine());
-            // Hemos quitado la llamada a ActivateAnswerPanel de aquí. 
-            // Ahora se llamará cuando termine de escribir el texto.
         }
         else
         {
             textPanel.SetActive(false);
-            statueCollider.enabled = true;
 
-            // Diálogo terminado  marcar esta escena como completada
-            string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            // Diálogo terminado marcar esta escena como completada
+            string currentScene = SceneManager.GetActiveScene().name;
             GameController.Instance?.CompleteScene(currentScene);
+
+            // NUEVO: Comprobamos si esta interacción debe cambiar la escena
+            if (cambiarEscenaAlTerminar)
+            {
+                // Iniciamos el fundido en negro y el cambio de escena
+                StartCoroutine(FadeAndChangeScene());
+            }
+            else
+            {
+                // Si no hay cambio de escena, el juego sigue normal
+                statueCollider.enabled = true;
+            }
         }
     }
 
@@ -109,5 +125,29 @@ public class TextController : MonoBehaviour
         {
             characterImage.sprite = characterSprite[lineIndex];
         }
+    }
+
+    // NUEVO: Corrutina para el fundido a negro
+    private IEnumerator FadeAndChangeScene()
+    {
+        // 1. Activamos la imagen negra (que ahora mismo es transparente)
+        blackFadeImage.gameObject.SetActive(true);
+
+        // Obtenemos su color actual
+        Color fadeColor = blackFadeImage.color;
+        float alpha = 0f;
+
+        // 2. Bucle que va aumentando la opacidad poco a poco
+        while (alpha < 1f)
+        {
+            alpha += Time.deltaTime * fadeSpeed; // Aumenta el alpha según la velocidad
+            fadeColor.a = alpha;                 // Aplicamos el nuevo alpha
+            blackFadeImage.color = fadeColor;    // Guardamos el color en la imagen
+
+            yield return null; // Esperamos al siguiente frame para seguir oscureciendo
+        }
+
+        // 3. Cuando la pantalla está totalmente negra, cargamos la nueva escena
+        SceneManager.LoadScene(nombreSiguienteEscena);
     }
 }
