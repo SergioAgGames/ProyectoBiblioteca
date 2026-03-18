@@ -602,24 +602,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Linea 1\tsasdads"
-  - linea 2 sdjabjcilk
-  - Linea 3 soaincopvn
+  - "\xBFC\xF3mo te llamas, joven? "
+  - "J.J. se\xF1or, \xBFQu\xE9 est\xE1 pasando aqu\xED? \xBFQui\xE9n es usted? "
+  - "Me llamo Federico. Todo esto es un caos\u2026 Los personajes de algunos libros
+    \r\nse han escapado, sin ellos, sus historias pierden todo el sentido. "
+  - "\xBFQu\xE9? \xBFC\xF3mo ha pasado esto? "
+  - "Nadie lo sabe, se han repartido por toda la ciudad. Estoy investigando lo que
+    \r\nha podido pasar, pero tengo que ir tras ellos antes de que sea demasiado
+    tarde. "
+  - "Le ayudar\xE9, se\xF1or. "
+  - "Perfecto, me vendr\xE1 bien un poco de ayuda. "
   characterName:
-  - n1
-  - n2
-  - n3
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
   characterSprite:
-  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
   textPanel: {fileID: 1682258556}
   namePanel: {fileID: 1852915200}
-  spritePanel: {fileID: 1981029268}
+  spritePanel: {fileID: 1167732784}
   dialogueText: {fileID: 863433772}
   nameText: {fileID: 808895029}
   characterImage: {fileID: 1981029270}
   continueButton: {fileID: 1442084043}
+  tienePreguntas: 0
   statueCollider: {fileID: 122719708}
   answerController: {fileID: 122719710}
 --- !u!114 &122719710

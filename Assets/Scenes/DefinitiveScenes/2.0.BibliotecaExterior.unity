@@ -857,7 +857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorca
+  m_text: J.J
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
   AnswerPanel: {fileID: 1985226520}
   dialogueText: {fileID: 543326538}
-  answerText: 1
+  answerText: 8
   inputText: {fileID: 1561386121}
   playerAnswer: HOLA
   correctText: 0
@@ -2145,16 +2145,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Linea 1\tsasdads"
-  - linea 2 sdjabjcilk
-  - Linea 3 soaincopvn
+  - "\xA1Al fin he llegado! Que pena que no ha podido venir Noah\u2026 Con la ilusi\xF3n
+    que \r\nle hac\xEDa. "
+  - "\xBFC\xF3mo te llamas, joven? "
+  - "J.J. se\xF1or, \xBFQu\xE9 est\xE1 pasando aqu\xED? \xBFQui\xE9n es usted? "
+  - "Me llamo Federico. Todo esto es un caos\u2026 Los personajes de algunos libros
+    \r\nse han escapado, sin ellos, sus historias pierden todo el sentido. "
+  - "\xBFQu\xE9? \xBFC\xF3mo ha pasado esto? "
+  - "Nadie lo sabe, se han repartido por toda la ciudad. Estoy investigando lo que
+    \r\nha podido pasar, pero tengo que ir tras ellos antes de que sea demasiado
+    tarde. "
+  - "Le ayudar\xE9, se\xF1or. "
+  - "Perfecto, me vendr\xE1 bien un poco de ayuda. "
   characterName:
-  - n1
-  - n2
-  - n3
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
+  - J.J
+  - Lorca
   characterSprite:
-  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
   textPanel: {fileID: 1682258556}
   namePanel: {fileID: 1852915200}
@@ -2163,6 +2182,7 @@ MonoBehaviour:
   nameText: {fileID: 808895029}
   characterImage: {fileID: 1981029270}
   continueButton: {fileID: 1442084043}
+  tienePreguntas: 0
   statueCollider: {fileID: 1815058944}
   answerController: {fileID: 1815058942}
 --- !u!61 &1815058944
@@ -2819,8 +2839,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -168.10541, y: -89.028534}
-  m_SizeDelta: {x: 189.86798, y: 492.353}
+  m_AnchoredPosition: {x: -170.5, y: -29.1}
+  m_SizeDelta: {x: 210.7084, y: 330.8401}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1981029270
 MonoBehaviour:
@@ -2842,7 +2862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
