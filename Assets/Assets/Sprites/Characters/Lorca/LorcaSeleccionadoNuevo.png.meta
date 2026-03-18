@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: de8490d7845e95648893aed780011de8
+guid: 4896a922cb539fd4db79643eb0d6885c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7035010816977956516
-    second: LorcaSeleccionado_0
+      213: -314270207465248903
+    second: LorcaSeleccionadoNuevo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LorcaSeleccionado_0
+      name: LorcaSeleccionadoNuevo_0
       rect:
         serializedVersion: 2
-        x: 646
-        y: 122
-        width: 1196
-        height: 3221
+        x: 642
+        y: 118
+        width: 1204
+        height: 3229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ae6001a01161a160800000000000000
-      internalID: 7035010816977956516
+      spriteID: 977ab8059ec73abf0800000000000000
+      internalID: -314270207465248903
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LorcaSeleccionado_0: 7035010816977956516
+      LorcaSeleccionadoNuevo_0: -314270207465248903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
