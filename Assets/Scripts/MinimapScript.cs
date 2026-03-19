@@ -20,6 +20,7 @@ public class MinimapScript : MonoBehaviour
     // ── Inspector ────────────────────────────────────────────────
     [SerializeField] private GameObject minimapIcon;       // El icono del minimapa que abre el menú
     [SerializeField] private GameObject menuPanel;         // El panel/menú que se abre al pulsar el icono
+    [SerializeField] private GameObject[] interactableObjects;
 
     [System.Serializable]
     public class ZoneEntry
@@ -149,4 +150,13 @@ public class MinimapScript : MonoBehaviour
             break;
         }
     }
+    public void InteractableObjectsState()
+    {
+        foreach (GameObject obj in interactableObjects)
+        {
+            bool stateChange = !obj.activeSelf;
+            obj.SetActive(stateChange);
+        }
+    }
+
 }
