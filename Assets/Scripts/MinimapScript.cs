@@ -1,26 +1,14 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-/// <summary>
-/// El minimapa persiste entre escenas y controla su propia lógica.
-/// Es un Singleton accesible desde cualquier script con MinimapScript.Instance
-/// 
-/// SETUP en Unity:
-/// 1. Coloca este script en el GameObject del minimapa en la PRIMERA escena.
-/// 2. En el Inspector, configura la lista "Zones" con una entrada por cada escena del juego.
-/// 3. Cada entrada necesita: el nombre de la escena, el icono normal y el icono completado del menú.
-/// </summary>
 public class MinimapScript : MonoBehaviour
 {
-    // ── Singleton ────────────────────────────────────────────────
+    // ── Singleton ─────────────────────────────────────────────────
     public static MinimapScript Instance { get; private set; }
 
-    // ── Inspector ────────────────────────────────────────────────
-    [SerializeField] private GameObject minimapIcon;       // El icono del minimapa que abre el menú
-    [SerializeField] private GameObject menuPanel;         // El panel/menú que se abre al pulsar el icono
-    [SerializeField] private GameObject[] interactableObjects;
+    // ── Inspector ─────────────────────────────────────────────────
+    [SerializeField] private GameObject menuPanel;
 
     [System.Serializable]
     public class ZoneEntry
@@ -28,14 +16,21 @@ public class MinimapScript : MonoBehaviour
         [Tooltip("Nombre exacto de la escena (igual que en File > Build Settings)")]
         public string sceneName;
 
-        [Tooltip("Icono o botón del menú cuando la zona NO está completada")]
+        [Tooltip("Icono del menú cuando la zona NO está completada")]
         public GameObject iconNormal;
 
-        [Tooltip("Icono o botón del menú cuando la zona SÍ está completada")]
+        [Tooltip("Icono del menú cuando la zona SÍ está completada")]
         public GameObject iconCompleted;
     }
 
     [SerializeField] private List<ZoneEntry> zones = new List<ZoneEntry>();
+
+    [Header("Escena Final")]
+    [Tooltip("Todos los iconos que se ocultarán cuando todas las escenas estén completadas")]
+    [SerializeField] private GameObject[] allMinimapIcons;
+
+    [Tooltip("Icono de la escena final, oculto hasta que se completen todas las zonas")]
+    [SerializeField] private GameObject finalSceneIcon;
 
     // ── Estado interno ────────────────────────────────────────────
     private HashSet<string> completedScenes = new HashSet<string>();
@@ -46,7 +41,6 @@ public class MinimapScript : MonoBehaviour
 
     private void Awake()
     {
-        // Patrón Singleton con persistencia entre escenas
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -56,12 +50,15 @@ public class MinimapScript : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+        // Asegurarse de que el icono final empieza oculto
+        if (finalSceneIcon != null)
+            finalSceneIcon.SetActive(false);
+
         RefreshAllIcons();
     }
 
     private void OnEnable()
     {
-        // Cada vez que carga una escena nueva, refrescar los iconos del menú
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -76,14 +73,9 @@ public class MinimapScript : MonoBehaviour
     }
 
     // ─────────────────────────────────────────────────────────────
-    // API PÚBLICA — llamada desde AnswerController
+    // API PÚBLICA
     // ─────────────────────────────────────────────────────────────
 
-    /// <summary>
-    /// Marca la escena ACTIVA como completada y actualiza su icono en el menú.
-    /// Llamar desde AnswerController cuando la respuesta es correcta:
-    ///     MinimapScript.Instance.CompleteCurrentScene();
-    /// </summary>
     public void CompleteCurrentScene()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -98,11 +90,11 @@ public class MinimapScript : MonoBehaviour
         Debug.Log($"[Minimap] Escena completada: {currentScene}");
 
         UpdateIconForScene(currentScene);
+
+        // Comprobar si todas las zonas están completas
+        CheckAllZonesCompleted();
     }
 
-    /// <summary>
-    /// Devuelve true si la escena indicada ya fue completada.
-    /// </summary>
     public bool IsSceneCompleted(string sceneName)
     {
         return completedScenes.Contains(sceneName);
@@ -112,13 +104,21 @@ public class MinimapScript : MonoBehaviour
     // LÓGICA DEL MENÚ
     // ─────────────────────────────────────────────────────────────
 
-    /// <summary>
-    /// Abre y cierra el menú del minimapa al pulsar el icono.
-    /// </summary>
     public void ActivateCanvas()
     {
         bool newState = !menuPanel.activeSelf;
         menuPanel.SetActive(newState);
+    }
+
+    [SerializeField] private GameObject[] interactableObjects;
+
+    public void InteractableObjectsState()
+    {
+        bool stateChange = !interactableObjects[0].activeSelf;
+        foreach (GameObject obj in interactableObjects)
+        {
+            obj.SetActive(stateChange);
+        }
     }
 
     // ─────────────────────────────────────────────────────────────
@@ -127,6 +127,13 @@ public class MinimapScript : MonoBehaviour
 
     private void RefreshAllIcons()
     {
+        // Si ya están todas completadas, mantener el estado final
+        if (AreAllZonesCompleted())
+        {
+            ShowFinalSceneIcon();
+            return;
+        }
+
         foreach (ZoneEntry zone in zones)
         {
             UpdateIconForScene(zone.sceneName);
@@ -150,13 +157,37 @@ public class MinimapScript : MonoBehaviour
             break;
         }
     }
-    public void InteractableObjectsState()
+
+    private void CheckAllZonesCompleted()
     {
-        foreach (GameObject obj in interactableObjects)
-        {
-            bool stateChange = !obj.activeSelf;
-            obj.SetActive(stateChange);
-        }
+        if (!AreAllZonesCompleted()) return;
+
+        Debug.Log("[Minimap] ¡Todas las zonas completadas!");
+        ShowFinalSceneIcon();
     }
 
+    private bool AreAllZonesCompleted()
+    {
+        // Comprueba que cada zona registrada está en el HashSet de completadas
+        foreach (ZoneEntry zone in zones)
+        {
+            if (!completedScenes.Contains(zone.sceneName))
+                return false;
+        }
+        return zones.Count > 0;
+    }
+
+    private void ShowFinalSceneIcon()
+    {
+        // Ocultar todos los iconos normales del minimapa
+        foreach (GameObject icon in allMinimapIcons)
+        {
+            if (icon != null)
+                icon.SetActive(false);
+        }
+
+        // Mostrar el icono de la escena final
+        if (finalSceneIcon != null)
+            finalSceneIcon.SetActive(true);
+    }
 }
