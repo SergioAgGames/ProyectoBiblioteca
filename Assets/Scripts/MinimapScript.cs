@@ -32,6 +32,7 @@ public class MinimapScript : MonoBehaviour
     [Tooltip("Icono de la escena final, oculto hasta que se completen todas las zonas")]
     [SerializeField] private GameObject finalSceneIcon;
 
+
     // ── Estado interno ────────────────────────────────────────────
     private HashSet<string> completedScenes = new HashSet<string>();
 
@@ -50,8 +51,7 @@ public class MinimapScript : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Asegurarse de que el icono final empieza oculto
-        if (finalSceneIcon != null)
+
             finalSceneIcon.SetActive(false);
 
         RefreshAllIcons();
@@ -70,6 +70,9 @@ public class MinimapScript : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         RefreshAllIcons();
+
+        // Buscar los nuevos objetos de la escena recién cargada
+        interactableObjects = GameObject.FindGameObjectsWithTag("MapInteractable");
     }
 
     // ─────────────────────────────────────────────────────────────
@@ -190,4 +193,6 @@ public class MinimapScript : MonoBehaviour
         if (finalSceneIcon != null)
             finalSceneIcon.SetActive(true);
     }
+
+
 }
