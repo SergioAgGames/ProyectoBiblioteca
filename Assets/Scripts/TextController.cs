@@ -22,7 +22,7 @@ public class TextController : MonoBehaviour
     // NUEVO: Este es tu interruptor mágico. Si está en false, ignorará el AnswerController.
     [SerializeField] private bool tienePreguntas = false;
 
-    [SerializeField] private Collider2D statueCollider;
+    [SerializeField] private Collider2D[] objectCollider;
 
     private int lineIndex;
     private int characternamesIndex;
@@ -50,7 +50,15 @@ public class TextController : MonoBehaviour
         characternamesIndex = 0;
         spriteIndex = 0;
 
-        statueCollider.enabled = false;
+        foreach (Collider2D col in objectCollider)
+        {
+            // Verificamos que no esté vacío (por si olvidaste asignar alguno en el Inspector)
+            if (col != null)
+            {
+                col.enabled = false; // Desactivamos este collider específico
+            }
+        }
+
         StartCoroutine(ShowLine());
     }
 
@@ -83,8 +91,14 @@ public class TextController : MonoBehaviour
             }
             else
             {
-                // Si no hay cambio de escena, el juego sigue normal
-                statueCollider.enabled = true;
+
+                foreach (Collider2D col in objectCollider)
+                {
+                    if (col != null)
+                    {
+                        col.enabled = true; 
+                    }
+                }
             }
         }
     }

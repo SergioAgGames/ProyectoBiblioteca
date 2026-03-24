@@ -710,7 +710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &113899917
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,9 @@ MonoBehaviour:
   characterImage: {fileID: 1981029270}
   continueButton: {fileID: 1442084043}
   tienePreguntas: 0
-  statueCollider: {fileID: 122719708}
+  objectCollider:
+  - {fileID: 122719708}
+  - {fileID: 1194527223}
   answerController: {fileID: 122719710}
   cambiarEscenaAlTerminar: 0
   nombreSiguienteEscena: 
@@ -1085,6 +1087,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
+  AnswerPanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  answerText: 0
+  inputText: {fileID: 0}
+  playerAnswer: 
+  correctText: 0
+  textController: {fileID: 0}
 --- !u!1 &158736280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,6 +5116,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
+  AnswerPanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  answerText: 0
+  inputText: {fileID: 0}
+  playerAnswer: 
+  correctText: 0
+  textController: {fileID: 0}
 --- !u!114 &1194527222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,7 +5170,9 @@ MonoBehaviour:
   characterImage: {fileID: 1660933731}
   continueButton: {fileID: 505893212}
   tienePreguntas: 0
-  statueCollider: {fileID: 1194527223}
+  objectCollider:
+  - {fileID: 1194527223}
+  - {fileID: 122719708}
   answerController: {fileID: 1194527221}
   cambiarEscenaAlTerminar: 0
   nombreSiguienteEscena: 
