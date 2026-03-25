@@ -72,37 +72,49 @@ public class MinimapScript : MonoBehaviour
     {
         RefreshAllIcons();
 
-        // 1. CERRAR EL MAPA POR DEFECTO AL CAMBIAR DE ESCENA
+        // 1. CERRAR EL MAPA AL CARGAR LA ESCENA
         if (menuPanel != null)
         {
             menuPanel.SetActive(false);
         }
 
         // 2. BUSCAR Y ENCENDER LOS INTERACTUABLES DE LA NUEVA ESCENA
-        // Asegúrate de que los objetos interactuables de la nueva escena tengan el tag "MapInteractable"
         interactableObjects = GameObject.FindGameObjectsWithTag("MapInteractable");
         if (interactableObjects != null)
         {
             foreach (GameObject obj in interactableObjects)
             {
-                if (obj != null) obj.SetActive(true); // Se encienden porque el mapa acaba de cerrarse
+                if (obj != null) obj.SetActive(true);
             }
         }
 
-        if (minimapCanvas != null && minimapCanvas.renderMode == RenderMode.ScreenSpaceCamera)
+        // 3. ASIGNACIÓN FORZADA DE CÁMARA AL CANVAS
+        if (minimapCanvas != null)
         {
-            Camera mainCam = Camera.main;
-            if (mainCam != null)
+            // Primero intentamos buscar por Tag (MainCamera)
+            Camera newCam = Camera.main;
+
+            // Si falla, cogemos la primera cámara que exista en toda la escena
+            if (newCam == null)
             {
-                minimapCanvas.worldCamera = mainCam;
+                newCam = UnityEngine.Object.FindFirstObjectByType<Camera>();
+            }
+
+            if (newCam != null)
+            {
+                minimapCanvas.worldCamera = newCam;
+                Debug.Log($"<color=cyan>[Minimap] Éxito: Cámara '{newCam.name}' asignada al Canvas en la escena {scene.name}</color>");
             }
             else
             {
-                Debug.LogWarning("[Minimap] No se encontró ninguna cámara con el Tag 'MainCamera' en esta escena.");
+                Debug.LogError($"[Minimap] ERROR: No se encontró NINGUNA cámara en la escena '{scene.name}'.");
             }
         }
+        else
+        {
+            Debug.LogError("[Minimap] ERROR: La variable 'minimapCanvas' está vacía. ¡Arrastra el Canvas desde el Inspector!");
+        }
     }
-
     // ─────────────────────────────────────────────────────────────
     // API PÚBLICA
     // ─────────────────────────────────────────────────────────────
