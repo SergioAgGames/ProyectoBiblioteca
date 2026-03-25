@@ -546,7 +546,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
   AnswerPanel: {fileID: 0}
-  dialogueText: {fileID: 0}
   answerLine: 0
   inputText: {fileID: 0}
   playerAnswer: 
@@ -939,6 +938,7 @@ MonoBehaviour:
   - "Pero primero tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
   - "El futuro es femenino, de Sara Cano. Su c\xF3digo es I-REA CAN fut. "
+  - INTRODUCE EL ENCANTAMIENT ODEL LIBRO
   - "Aqu\xED est\xE1 su libro. "
   - 'Perfecto. '
   - 'Recuerda algo, J.J. '
@@ -1257,10 +1257,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
   AnswerPanel: {fileID: 612881174}
-  dialogueText: {fileID: 398716759}
   answerLine: 22
   inputText: {fileID: 235256636}
-  playerAnswer: HOLA BUENAS TARDES
+  playerAnswer: HOLA
   correctText: 0
   textController: {fileID: 492438741}
 --- !u!1 &519420028
@@ -2002,9 +2001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NExt
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2290,8 +2287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -19.785889, y: 14.84}
-  m_SizeDelta: {x: 178.138, y: 43.404}
+  m_AnchoredPosition: {x: -58, y: 40}
+  m_SizeDelta: {x: 157.056, y: 83.332}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1352848330
 MonoBehaviour:
@@ -2381,8 +2378,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2197672003421536830, guid: 615239f41dd917e48ba1cf16b0e0c87f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
