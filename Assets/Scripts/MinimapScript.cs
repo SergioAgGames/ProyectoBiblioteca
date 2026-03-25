@@ -9,6 +9,7 @@ public class MinimapScript : MonoBehaviour
 
     // ── Inspector ─────────────────────────────────────────────────
     [SerializeField] private GameObject menuPanel;
+    [SerializeField] private Canvas minimapCanvas;
 
     [System.Serializable]
     public class ZoneEntry
@@ -88,11 +89,17 @@ public class MinimapScript : MonoBehaviour
             }
         }
 
-        // 3. REASIGNAR LA NUEVA CÁMARA AL CANVAS (Para que los textos no se rompan)
-        Canvas myCanvas = GetComponentInChildren<Canvas>(true);
-        if (myCanvas != null && myCanvas.renderMode == RenderMode.ScreenSpaceCamera)
+        if (minimapCanvas != null && minimapCanvas.renderMode == RenderMode.ScreenSpaceCamera)
         {
-            myCanvas.worldCamera = Camera.main;
+            Camera mainCam = Camera.main;
+            if (mainCam != null)
+            {
+                minimapCanvas.worldCamera = mainCam;
+            }
+            else
+            {
+                Debug.LogWarning("[Minimap] No se encontró ninguna cámara con el Tag 'MainCamera' en esta escena.");
+            }
         }
     }
 

@@ -2019,9 +2019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Catedral
-
-'
+  m_text: Castillo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2455,11 +2453,11 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: -4, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1099095408}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -3043,7 +3041,7 @@ Transform:
   m_GameObject: {fileID: 597576261}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 374, y: 142, z: 0}
+  m_LocalPosition: {x: 402.44, y: 142, z: 0}
   m_LocalScale: {x: 26.00537, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4431,7 +4429,7 @@ Transform:
   m_GameObject: {fileID: 1019391146}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.6, y: -150.70073, z: 0}
+  m_LocalPosition: {x: 17.9, y: -150.70073, z: 0}
   m_LocalScale: {x: 26.318687, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4839,7 +4837,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 519420032}
   - {fileID: 1299555411}
   - {fileID: 113899917}
   m_Father: {fileID: 0}
@@ -4857,6 +4854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinimapScript
   menuPanel: {fileID: 113899916}
+  minimapCanvas: {fileID: 113899920}
   zones:
   - sceneName: 3.Catedral
     iconNormal: {fileID: 2068799007}
@@ -6277,7 +6275,7 @@ Transform:
   m_GameObject: {fileID: 1315825317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 228.6, y: -150.70073, z: 0}
+  m_LocalPosition: {x: 278.5, y: -150.70073, z: 0}
   m_LocalScale: {x: 26.00537, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7943,7 +7941,7 @@ Transform:
   m_GameObject: {fileID: 1694727429}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -241, y: 142, z: 0}
+  m_LocalPosition: {x: -193.7, y: 142, z: 0}
   m_LocalScale: {x: 26.318687, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8444,7 +8442,7 @@ Transform:
   m_GameObject: {fileID: 1877669895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -335.9, y: -150.70073, z: 0}
+  m_LocalPosition: {x: -263.1, y: -150.70073, z: 0}
   m_LocalScale: {x: 26.632008, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8913,7 +8911,7 @@ Transform:
   m_GameObject: {fileID: 1918190098}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.4, y: -28.52, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 34.147274, y: 30.185999, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9492,7 +9490,7 @@ Transform:
   m_GameObject: {fileID: 2068799007}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -511, y: 142, z: 0}
+  m_LocalPosition: {x: -463.4, y: 142, z: 0}
   m_LocalScale: {x: 26.632008, y: 24.594662, z: 107.91409}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9671,6 +9669,7 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1943555846}
   - {fileID: 1533626077}

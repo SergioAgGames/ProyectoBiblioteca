@@ -4,6 +4,8 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems; // Quité Microsoft.Unity.VisualStudio.Editor que no es necesario aquí
 using UnityEngine.SceneManagement;
+
+
 public class TextController : MonoBehaviour
 {
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
