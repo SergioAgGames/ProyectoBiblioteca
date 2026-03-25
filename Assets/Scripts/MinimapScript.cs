@@ -71,8 +71,29 @@ public class MinimapScript : MonoBehaviour
     {
         RefreshAllIcons();
 
-        // Buscar los nuevos objetos de la escena recién cargada
+        // 1. CERRAR EL MAPA POR DEFECTO AL CAMBIAR DE ESCENA
+        if (menuPanel != null)
+        {
+            menuPanel.SetActive(false);
+        }
+
+        // 2. BUSCAR Y ENCENDER LOS INTERACTUABLES DE LA NUEVA ESCENA
+        // Asegúrate de que los objetos interactuables de la nueva escena tengan el tag "MapInteractable"
         interactableObjects = GameObject.FindGameObjectsWithTag("MapInteractable");
+        if (interactableObjects != null)
+        {
+            foreach (GameObject obj in interactableObjects)
+            {
+                if (obj != null) obj.SetActive(true); // Se encienden porque el mapa acaba de cerrarse
+            }
+        }
+
+        // 3. REASIGNAR LA NUEVA CÁMARA AL CANVAS (Para que los textos no se rompan)
+        Canvas myCanvas = GetComponentInChildren<Canvas>(true);
+        if (myCanvas != null && myCanvas.renderMode == RenderMode.ScreenSpaceCamera)
+        {
+            myCanvas.worldCamera = Camera.main;
+        }
     }
 
     // ─────────────────────────────────────────────────────────────
