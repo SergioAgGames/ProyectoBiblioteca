@@ -1449,8 +1449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -19.785889, y: 14.84}
-  m_SizeDelta: {x: 178.138, y: 43.404}
+  m_AnchoredPosition: {x: -91.3, y: 33}
+  m_SizeDelta: {x: 130, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1442084043
 MonoBehaviour:
@@ -1540,8 +1540,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2197672003421536830, guid: 615239f41dd917e48ba1cf16b0e0c87f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1887,9 +1887,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NExt
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2165,7 +2163,7 @@ GameObject:
   - component: {fileID: 1815058945}
   - component: {fileID: 1815058944}
   - component: {fileID: 1815058943}
-  - component: {fileID: 1815058942}
+  - component: {fileID: 1815058947}
   m_Layer: 0
   m_Name: Biblioteca_0
   m_TagString: Untagged
@@ -2189,25 +2187,6 @@ Transform:
   - {fileID: 1492957588}
   m_Father: {fileID: 1894077173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1815058942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815058940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnswerController
-  AnswerPanel: {fileID: 1985226520}
-  dialogueText: {fileID: 543326538}
-  answerText: 8
-  inputText: {fileID: 1561386121}
-  playerAnswer: HOLA
-  correctText: 0
-  textController: {fileID: 1815058943}
 --- !u!114 &1815058943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2235,8 +2214,9 @@ MonoBehaviour:
   characterImage: {fileID: 1981029270}
   continueButton: {fileID: 1442084043}
   tienePreguntas: 0
-  statueCollider: {fileID: 1815058944}
-  answerController: {fileID: 1815058942}
+  objectCollider:
+  - {fileID: 1815058944}
+  answerController: {fileID: 0}
   cambiarEscenaAlTerminar: 1
   nombreSiguienteEscena: 2.1.BibliotecaInterior
   blackFadeImage: {fileID: 1401861342}
@@ -2443,6 +2423,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1815058947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815058940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5133816876d9e43a77d8ca87b63657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnswerController
+  AnswerPanel: {fileID: 1985226520}
+  answerLine: 0
+  inputText: {fileID: 1561386121}
+  playerAnswer: 
+  correctText: 0
+  textController: {fileID: 1815058943}
 --- !u!1 &1846607109
 GameObject:
   m_ObjectHideFlags: 0

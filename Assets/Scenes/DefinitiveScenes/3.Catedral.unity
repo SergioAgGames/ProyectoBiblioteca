@@ -1187,13 +1187,14 @@ MonoBehaviour:
   - J.J
   - Constanza
   - J.J
+  - J.J
   - Constanza
   - Constanza
   - J.J
   - Constanza
   - Lorca
   - Constanza
-  - Constanza
+  - J.J
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
@@ -1218,13 +1219,14 @@ MonoBehaviour:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   textPanel: {fileID: 618797439}
   namePanel: {fileID: 776105090}
   spritePanel: {fileID: 1537257723}
@@ -1235,7 +1237,7 @@ MonoBehaviour:
   tienePreguntas: 1
   objectCollider:
   - {fileID: 492438743}
-  - {fileID: 0}
+  - {fileID: 1332353370}
   answerController: {fileID: 492438747}
   cambiarEscenaAlTerminar: 0
   nombreSiguienteEscena: 
@@ -4186,7 +4188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

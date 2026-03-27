@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e39c06365f1e54b933f0d7253b317a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScenesManager
-  sceneName: SampleScene
+  sceneName: 2.0.BibliotecaExterior
 --- !u!4 &284813868
 Transform:
   m_ObjectHideFlags: 0
