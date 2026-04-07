@@ -1794,13 +1794,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "\xBFY se supone que esto antes era un castillo? Si solo es un muro de piedra. "
-  - " JJ, con el paso de los a\xF1os ha ido empeorando, pero te aseguro que antes
-    era mucho m\xE1s impresionante."
+  - "Esta casa lleva mucho tiempo aqu\xED, pero ya no vive nadie en ella."
+  - Es un bonito lugar para tener una casa, rodeado de naturaleza. Un lugar perfecto
+    para tener una vida tranquila.
+  - "Ojal\xE1 tener una casa en un lugar parecido alg\xFAn d\xEDa, pero mi padre
+    dice que es complicado conseguir una hoy en d\xEDa."
+  - "Tu padre tiene raz\xF3n, pero no pierdas la esperanza."
   characterName:
   - J.J
   - Lorca
+  - J.J
+  - Lorca
   characterSprite:
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   textPanel: {fileID: 1312295449}
