@@ -1408,12 +1408,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "En esta estanteria hay muchos libros muy guays, deber\xEDa llevar uno a Noa
-    m\xE1s tarde."
+  - "\xBFY se supone que esto antes era un castillo? Si solo es un muro de piedra. "
+  - " JJ, con el paso de los a\xF1os ha ido empeorando, pero te aseguro que antes
+    era mucho m\xE1s impresionante."
   characterName:
   - J.J
+  - Lorca
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   textPanel: {fileID: 372586745}
   namePanel: {fileID: 501565522}
   spritePanel: {fileID: 1181464675}
@@ -2615,29 +2618,29 @@ MonoBehaviour:
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: -275228963133359547, guid: ba8595bfdcaa9d74cb51b2ceba2367ff, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   textPanel: {fileID: 1220273517}
   namePanel: {fileID: 1012370748}
   spritePanel: {fileID: 2084665879}
@@ -2667,7 +2670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
   AnswerPanel: {fileID: 2089127384}
-  answerLine: 22
+  answerLine: 18
   inputText: {fileID: 2079156625}
   playerAnswer: HOLA
   correctText: 0
