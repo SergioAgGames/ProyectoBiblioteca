@@ -157,7 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -492,9 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NExt
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3120,11 +3118,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "En esta estanteria hay muchos libros muy guays, deber\xEDa llevar uno a Noa
-    m\xE1s tarde."
+  - "C\xF3mo puedes presenciar \xE9ste es el mayor orgullo de esta ciudad, una maravillosa
+    catedral g\xF3tica. "
+  - "\xBFQu\xE9 significa g\xF3tico? "
+  - "Es un tipo de arquitectura, se puede saber por la ventana que parece una rosa
+    llamada roset\xF3n. Tambi\xE9n se puede saber por los arcos en forma de punta. "
+  - "Oh, ya veo, gracias se\xF1or Lorca."
   characterName:
+  - Lorca
+  - J.J
+  - Lorca
   - J.J
   characterSprite:
+  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   textPanel: {fileID: 51174341}
   namePanel: {fileID: 856729828}
@@ -3136,7 +3144,7 @@ MonoBehaviour:
   tienePreguntas: 0
   objectCollider:
   - {fileID: 1332353370}
-  - {fileID: 0}
+  - {fileID: 492438743}
   answerController: {fileID: 0}
   cambiarEscenaAlTerminar: 0
   nombreSiguienteEscena: 
@@ -3217,7 +3225,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -3261,7 +3269,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1874017020}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -3273,7 +3281,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Stop
           m_Mode: 1
@@ -3881,7 +3889,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J.J
+  m_text: Lorca
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4261,8 +4269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -19.785889, y: 14.84}
-  m_SizeDelta: {x: 178.138, y: 43.404}
+  m_AnchoredPosition: {x: -58, y: 40}
+  m_SizeDelta: {x: 157.056, y: 83.332}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1824518266
 MonoBehaviour:
@@ -4352,8 +4360,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2197672003421536830, guid: 615239f41dd917e48ba1cf16b0e0c87f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
