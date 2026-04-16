@@ -2021,67 +2021,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 7
   m_TargetDisplay: 0
---- !u!1 &1760809984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1760809985}
-  - component: {fileID: 1760809986}
-  m_Layer: 0
-  m_Name: BackGroundMusic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1760809985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760809984}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2056449640}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760809986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760809984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d47ce4021207446409ae6c71199c43bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BackgroundSound
-  sceneLayers:
-  - sceneName: 2.0.BibliotecaExterior
-    clip: {fileID: 8300000, guid: dbb3b34e6a6906447b587a38580ff0ea, type: 3}
-  - sceneName: 3.Catedral
-    clip: {fileID: 8300000, guid: 66715d5fb4d782442a366f32ef2eb827, type: 3}
-  - sceneName: 4.Castillo
-    clip: {fileID: 8300000, guid: c206705afc2d771418ce6d21c847624f, type: 3}
-  - sceneName: 5.1.ParrallInterior
-    clip: {fileID: 8300000, guid: 091d4c38caca7fd488b929bf115cee97, type: 3}
-  - sceneName: 6.Monasterio
-    clip: {fileID: 8300000, guid: 08b75a11f37182a4189873ac2cc82f83, type: 3}
-  - sceneName: 7.0.ArcoSM
-    clip: {fileID: 8300000, guid: ce8f4e8a15760eb439416cf1ec8dbe4f, type: 3}
-  - sceneName: 8.0.MuseoEvolucion
-    clip: {fileID: 8300000, guid: fc8d4179a94fa1d4bb7e9650125cc154, type: 3}
-  - sceneName: 9.0.PlazaCid
-    clip: {fileID: 8300000, guid: 641dd7a0c23db124788d08d5d85bf993, type: 3}
 --- !u!1 &1815058940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,7 +3041,6 @@ Transform:
   m_Children:
   - {fileID: 1874017019}
   - {fileID: 564788198}
-  - {fileID: 1760809985}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807

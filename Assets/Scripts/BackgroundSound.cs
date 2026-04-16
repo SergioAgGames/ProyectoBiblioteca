@@ -1,4 +1,4 @@
-
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,43 +9,25 @@ public class BackgroundSound : MonoBehaviour
     [System.Serializable]
     public struct SceneLayer
     {
-        public string sceneName;   // Nombre exacto de la escena
-        public AudioClip clip;     // La pista de audio
+        public string sceneName;
+        public AudioClip clip;
     }
 
     [Header("Capas de Audio por Escena")]
     public SceneLayer[] sceneLayers;
 
     private AudioSource[] audioSources;
+    private bool[] hasStarted; // ¿Ya arrancó esta pista alguna vez?
 
     void Awake()
     {
-        // Singleton persistente
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
 
-        InitializeAudioSources();
-    }
-
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    void InitializeAudioSources()
-    {
+        // Crear AudioSources pero NO reproducir nada todavía
         audioSources = new AudioSource[sceneLayers.Length];
+        hasStarted = new bool[sceneLayers.Length];
 
         for (int i = 0; i < sceneLayers.Length; i++)
         {
@@ -53,59 +35,64 @@ public class BackgroundSound : MonoBehaviour
             audioSources[i].clip = sceneLayers[i].clip;
             audioSources[i].loop = true;
             audioSources[i].playOnAwake = false;
-            audioSources[i].mute = true; // Todas muteadas al inicio
+            audioSources[i].volume = 0f;
+            hasStarted[i] = false;
         }
-
-        // Arrancar TODAS juntas en el mismo frame
-        foreach (var source in audioSources)
-            source.Play();
-
-        // Desmutear solo la primera (escena inicial)
-        UpdateLayers(SceneManager.GetActiveScene().name);
     }
+
+    void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        UpdateLayers(scene.name);
-    }
-
-    void UpdateLayers(string sceneName)
-    {
         for (int i = 0; i < sceneLayers.Length; i++)
         {
-            // Desmutea acumulativamente: todas las anteriores + la actual
-            bool shouldPlay = false;
-            for (int j = 0; j <= i; j++)
+            if (sceneLayers[i].sceneName == scene.name)
             {
-                if (sceneLayers[j].sceneName == sceneName)
-                {
-                    shouldPlay = true;
-                    break;
-                }
-                // Si la escena actual vino después de la capa j, desmutear
-                if (IsSceneAfterOrCurrent(sceneName, j))
-                    shouldPlay = true;
+                ActivateLayer(i);
+                break;
             }
-
-            audioSources[i].mute = !shouldPlay;
         }
     }
 
-    // Devuelve true si la escena actual es igual o posterior a la capa [layerIndex]
-    bool IsSceneAfterOrCurrent(string currentScene, int layerIndex)
+    void ActivateLayer(int index)
     {
-        // El orden de las capas define el orden de las escenas
-        for (int i = layerIndex; i < sceneLayers.Length; i++)
+        // Activar la pista nueva sincronizada con la pista maestra (índice 0)
+        if (!hasStarted[index])
         {
-            if (sceneLayers[i].sceneName == currentScene)
-                return true;
+            hasStarted[index] = true;
+
+            if (index == 0 || !audioSources[0].isPlaying)
+            {
+                // Primera pista: arrancar desde 0
+                audioSources[index].Play();
+            }
+            else
+            {
+                // Arrancar en el mismo punto que la pista maestra
+                audioSources[index].timeSamples = audioSources[0].timeSamples;
+                audioSources[index].Play();
+            }
         }
-        return false;
+
+        // Subir volumen de todas las pistas que ya arrancaron (fade suave)
+        for (int i = 0; i <= index; i++)
+        {
+            if (hasStarted[i])
+                StartCoroutine(FadeVolume(audioSources[i], 1f, 1.5f));
+        }
     }
 
-    // Llamar esto para ir a una nueva escena de forma segura
-    public void LoadScene(string sceneName)
+    IEnumerator FadeVolume(AudioSource source, float targetVol, float duration)
     {
-        SceneManager.LoadScene(sceneName);
+        float start = source.volume;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            source.volume = Mathf.Lerp(start, targetVol, t / duration);
+            yield return null;
+        }
+        source.volume = targetVol;
     }
 }
