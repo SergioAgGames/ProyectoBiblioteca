@@ -232,7 +232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -574,7 +574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90213627}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1113,13 +1113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
-  AnswerPanel: {fileID: 1985226520}
-  dialogueText: {fileID: 543326538}
-  answerText: 1
-  inputText: {fileID: 1561386121}
-  playerAnswer: HOLA
-  correctText: 0
-  textController: {fileID: 122719709}
 --- !u!1 &175518177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,14 +2243,14 @@ Transform:
   m_GameObject: {fileID: 364718062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.69, y: -148.77779, z: -90}
+  m_LocalPosition: {x: -0.07860947, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 806471276}
   - {fileID: 732036612}
   - {fileID: 1228666055}
-  m_Father: {fileID: 942582102}
+  m_Father: {fileID: 1533626077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &415281403
 GameObject:
@@ -2508,13 +2501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
-  AnswerPanel: {fileID: 1985226520}
-  dialogueText: {fileID: 543326538}
-  answerText: 1
-  inputText: {fileID: 1561386121}
-  playerAnswer: HOLA
-  correctText: 0
-  textController: {fileID: 473346825}
 --- !u!114 &473346825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3795,29 +3781,37 @@ MonoBehaviour:
   - Ulises
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
+  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
-  - {fileID: 7717113556048329519, guid: d72e03bd2f40ab84e8e6edd33e3607bb, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 7717113556048329519, guid: d72e03bd2f40ab84e8e6edd33e3607bb, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
-  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 7717113556048329519, guid: d72e03bd2f40ab84e8e6edd33e3607bb, type: 3}
-  - {fileID: -4706389537230110449, guid: fec3f25dc7e8ad74686034e2287667bf, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
+  - {fileID: -1432996213312248980, guid: 0e8bfe80625e90c41bea47cc505ae2d9, type: 3}
+  - {fileID: 7673603455046692304, guid: d6a6e63064b82f749ab4ba02bd9d71d2, type: 3}
   textPanel: {fileID: 1697847292}
   namePanel: {fileID: 452488644}
   spritePanel: {fileID: 727596003}
@@ -5071,7 +5065,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -5115,7 +5109,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1874017020}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -5127,9 +5121,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Pause
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5655,9 +5649,6 @@ Transform:
   - {fileID: 598506801}
   - {fileID: 1697847293}
   - {fileID: 27054598}
-  - {fileID: 1299991093}
-  - {fileID: 1798575130}
-  - {fileID: 364718063}
   m_Father: {fileID: 1533626077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960900683
@@ -6800,7 +6791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J.J
+  m_text: Lorca
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb2eddbc3d1999248a9f13767bd58b2b, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7538,14 +7529,14 @@ Transform:
   m_GameObject: {fileID: 1299991092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.76861, y: -148.77779, z: -90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1860948167}
   - {fileID: 2099374227}
   - {fileID: 1131254011}
-  m_Father: {fileID: 942582102}
+  m_Father: {fileID: 1533626077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300205262
 GameObject:
@@ -7971,7 +7962,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -8015,7 +8006,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1874017020}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -8027,9 +8018,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Pause
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8476,13 +8467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d6db76e8c91448b9501648d50283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnswerController
-  AnswerPanel: {fileID: 1985226520}
-  dialogueText: {fileID: 543326538}
-  answerText: 1
-  inputText: {fileID: 1561386121}
-  playerAnswer: HOLA
-  correctText: 0
-  textController: {fileID: 1531707398}
 --- !u!114 &1531707398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8752,6 +8736,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1299991093}
+  - {fileID: 1798575130}
+  - {fileID: 364718063}
   - {fileID: 942582102}
   - {fileID: 1894077173}
   - {fileID: 1682258557}
@@ -9655,14 +9642,14 @@ Transform:
   m_GameObject: {fileID: 1798575129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.69, y: -148.77779, z: -90}
+  m_LocalPosition: {x: -0.07860947, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1416466140}
   - {fileID: 1402418059}
   - {fileID: 921033059}
-  m_Father: {fileID: 942582102}
+  m_Father: {fileID: 1533626077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1802273731
 GameObject:
@@ -9863,7 +9850,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -9907,7 +9894,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1874017020}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
           m_Mode: 1
@@ -9919,9 +9906,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 564788199}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Pause
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
