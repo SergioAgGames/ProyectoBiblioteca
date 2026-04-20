@@ -1095,7 +1095,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 9118118542471413279, guid: dbd477ab56f94c842a7a56ecc2a306de, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
@@ -2251,7 +2251,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 12
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5311536784610707187, guid: 403eb16414143024db41d85f05b2b9be, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1755465549

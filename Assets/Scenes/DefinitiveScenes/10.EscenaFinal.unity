@@ -782,8 +782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "En esta estanteria hay muchos libros muy guays, deber\xEDa llevar uno a Noa
-    m\xE1s tarde."
+  - "Ya solo falta un personaje y todos los libros habr\xE1n vuelto a la normalidad
+    \xA1Qu\xE9 bien!"
   characterName:
   - J.J
   characterSprite:
@@ -2845,7 +2845,7 @@ MonoBehaviour:
   - {fileID: 1194527223}
   - {fileID: 122719708}
   answerController: {fileID: 1194527226}
-  cambiarEscenaAlTerminar: 0
+  cambiarEscenaAlTerminar: 1
   nombreSiguienteEscena: 
   blackFadeImage: {fileID: 0}
   fadeSpeed: 1
@@ -3304,7 +3304,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 12
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5596051300331692712, guid: b39c0917d6b19674595597b281bc711f, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
@@ -4591,7 +4591,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 12
   m_MaskInteraction: 0
   m_Sprite: {fileID: -314270207465248903, guid: 4896a922cb539fd4db79643eb0d6885c, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}

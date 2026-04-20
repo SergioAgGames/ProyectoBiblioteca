@@ -2280,7 +2280,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 12
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2324486552903930555, guid: 295f5863d14b6004c8ec82741e27f5b1, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
@@ -2301,9 +2301,9 @@ Transform:
   m_GameObject: {fileID: 1141808247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.081, y: -0.05, z: 0}
-  m_LocalScale: {x: 1.04, y: 1.0270157, z: 1.1299179}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1299892404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2617,10 +2617,10 @@ MonoBehaviour:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: 5641794162817385645, guid: a42a0785751021548876e7001354c5c4, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
+  - {fileID: 5641794162817385645, guid: a42a0785751021548876e7001354c5c4, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
@@ -3434,7 +3434,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9203204513404063232, guid: e78e766fcc5a72d47879245dd72a01cf, type: 3}
   m_Color: {r: 0.9427508, g: 1, b: 0, a: 1}
