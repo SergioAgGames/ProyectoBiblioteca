@@ -4,42 +4,31 @@ using UnityEngine.SceneManagement;
 
 public class MinimapScript : MonoBehaviour
 {
-    // ── Singleton ─────────────────────────────────────────────────
+  
     public static MinimapScript Instance { get; private set; }
 
-    // ── Inspector ─────────────────────────────────────────────────
+    
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private Canvas minimapCanvas;
 
     [System.Serializable]
     public class ZoneEntry
     {
-        [Tooltip("Nombre exacto de la escena (igual que en File > Build Settings)")]
+        
         public string sceneName;
 
-        [Tooltip("Icono del menú cuando la zona NO está completada")]
         public GameObject iconNormal;
 
-        [Tooltip("Icono del menú cuando la zona SÍ está completada")]
         public GameObject iconCompleted;
     }
 
     [SerializeField] private List<ZoneEntry> zones = new List<ZoneEntry>();
 
-    [Header("Escena Final")]
-    [Tooltip("Todos los iconos que se ocultarán cuando todas las escenas estén completadas")]
     [SerializeField] private GameObject[] allMinimapIcons;
 
-    [Tooltip("Icono de la escena final, oculto hasta que se completen todas las zonas")]
     [SerializeField] private GameObject finalSceneIcon;
 
-
-    // ── Estado interno ────────────────────────────────────────────
     private HashSet<string> completedScenes = new HashSet<string>();
-
-    // ─────────────────────────────────────────────────────────────
-    // UNITY CALLBACKS
-    // ─────────────────────────────────────────────────────────────
 
     private void Awake()
     {
@@ -71,14 +60,13 @@ public class MinimapScript : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         RefreshAllIcons();
+        Debug.Log($" Escena cargada: {scene.name}");
 
-        // 1. CERRAR EL MAPA AL CARGAR LA ESCENA
         if (menuPanel != null)
         {
             menuPanel.SetActive(false);
         }
 
-        // 2. BUSCAR Y ENCENDER LOS INTERACTUABLES DE LA NUEVA ESCENA
         interactableObjects = GameObject.FindGameObjectsWithTag("MapInteractable");
         if (interactableObjects != null)
         {
@@ -88,13 +76,10 @@ public class MinimapScript : MonoBehaviour
             }
         }
 
-        // 3. ASIGNACIÓN FORZADA DE CÁMARA AL CANVAS
         if (minimapCanvas != null)
         {
-            // Primero intentamos buscar por Tag (MainCamera)
             Camera newCam = Camera.main;
 
-            // Si falla, cogemos la primera cámara que exista en toda la escena
             if (newCam == null)
             {
                 newCam = UnityEngine.Object.FindFirstObjectByType<Camera>();
@@ -115,10 +100,6 @@ public class MinimapScript : MonoBehaviour
             Debug.LogError("[Minimap] ERROR: La variable 'minimapCanvas' está vacía. ¡Arrastra el Canvas desde el Inspector!");
         }
     }
-    // ─────────────────────────────────────────────────────────────
-    // API PÚBLICA
-    // ─────────────────────────────────────────────────────────────
-
     public void CompleteCurrentScene()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -134,7 +115,6 @@ public class MinimapScript : MonoBehaviour
 
         UpdateIconForScene(currentScene);
 
-        // Comprobar si todas las zonas están completas
         CheckAllZonesCompleted();
     }
 
@@ -142,10 +122,6 @@ public class MinimapScript : MonoBehaviour
     {
         return completedScenes.Contains(sceneName);
     }
-
-    // ─────────────────────────────────────────────────────────────
-    // LÓGICA DEL MENÚ
-    // ─────────────────────────────────────────────────────────────
 
     public void ActivateCanvas()
     {
@@ -164,13 +140,9 @@ public class MinimapScript : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────────────────────
-    // MÉTODOS PRIVADOS
-    // ─────────────────────────────────────────────────────────────
-
+    
     private void RefreshAllIcons()
     {
-        // Si ya están todas completadas, mantener el estado final
         if (AreAllZonesCompleted())
         {
             ShowFinalSceneIcon();
@@ -211,7 +183,6 @@ public class MinimapScript : MonoBehaviour
 
     private bool AreAllZonesCompleted()
     {
-        // Comprueba que cada zona registrada está en el HashSet de completadas
         foreach (ZoneEntry zone in zones)
         {
             if (!completedScenes.Contains(zone.sceneName))
@@ -222,14 +193,12 @@ public class MinimapScript : MonoBehaviour
 
     private void ShowFinalSceneIcon()
     {
-        // Ocultar todos los iconos normales del minimapa
         foreach (GameObject icon in allMinimapIcons)
         {
             if (icon != null)
                 icon.SetActive(false);
         }
 
-        // Mostrar el icono de la escena final
         if (finalSceneIcon != null)
             finalSceneIcon.SetActive(true);
     }

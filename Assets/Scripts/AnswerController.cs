@@ -62,7 +62,7 @@ public class AnswerController : MonoBehaviour
             Debug.Log("[AnswerController] Respuesta correcta");
 
             textController.continueButton.interactable = true;
-            /*
+            
             // ── Notificar al minimapa que esta escena está completada ──
             if (MinimapScript.Instance != null)
             {
@@ -71,7 +71,7 @@ public class AnswerController : MonoBehaviour
             else
             {
                 Debug.LogWarning("[AnswerController] No se encontró el MinimapScript. ¿Está en la escena?");
-            }*/
+            }
         }
     }
 }
