@@ -15,7 +15,3 @@ public class ScenesManager : MonoBehaviour
         Application.Quit(); 
     }
 }
-/*
-TODO LIST:
--SCRIPT CONTROLADOR MUSICA 
-*/

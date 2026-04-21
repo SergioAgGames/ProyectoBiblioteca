@@ -87,9 +87,6 @@ public class FinalEsceneText : MonoBehaviour
            
             textPanel.SetActive(false);
 
-           
-
-            // Diálogo terminado  marcar esta escena como completada
             string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             GameController.Instance?.CompleteScene(currentScene);
 

@@ -2383,7 +2383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "\xA1Al fin he llegado! Que pena que no ha podido venir Noah\u2026 Con la ilusi\xF3n
+  - "\xA1Al fin he llegado! Que pena que no ha podido venir Noa\u2026 Con la ilusi\xF3n
     que \r\nle hac\xEDa. "
   characterName:
   - J.J

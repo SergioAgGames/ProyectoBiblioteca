@@ -5,12 +5,11 @@ using Unity.VisualScripting;
 public class FadeIn : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup;
-    [SerializeField] private float duration = 1.5f; // Tiempo en segundos
+    [SerializeField] private float duration = 1.5f; 
     [SerializeField] private FinalEsceneText finalescenetext;
 
     void Start()
     {
-        // Aseguramos que empiece invisible
         if (canvasGroup != null)
         {
             canvasGroup.alpha = 0;
@@ -25,12 +24,12 @@ public class FadeIn : MonoBehaviour
         while (counter < duration)
         {
             counter += Time.deltaTime;
-            // Interpolación lineal entre 0 y 1
+            
             canvasGroup.alpha = Mathf.Lerp(0, 1, counter / duration);
             yield return null;
         }
 
-        canvasGroup.alpha = 1; // Asegurar que quede al máximo
+        canvasGroup.alpha = 1; 
 
         finalescenetext.StartDialogue();
     }

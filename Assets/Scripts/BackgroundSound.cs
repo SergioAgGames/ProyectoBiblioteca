@@ -17,7 +17,7 @@ public class BackgroundSound : MonoBehaviour
     public SceneLayer[] sceneLayers;
 
     private AudioSource[] audioSources;
-    private bool[] hasStarted; // ¿Ya arrancó esta pista alguna vez?
+    private bool[] hasStarted; 
 
     void Awake()
     {
@@ -25,7 +25,6 @@ public class BackgroundSound : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(transform.root.gameObject);
 
-        // Crear AudioSources pero NO reproducir nada todavía
         audioSources = new AudioSource[sceneLayers.Length];
         hasStarted = new bool[sceneLayers.Length];
 
@@ -57,25 +56,21 @@ public class BackgroundSound : MonoBehaviour
 
     void ActivateLayer(int index)
     {
-        // Activar la pista nueva sincronizada con la pista maestra (índice 0)
         if (!hasStarted[index])
         {
             hasStarted[index] = true;
 
             if (index == 0 || !audioSources[0].isPlaying)
             {
-                // Primera pista: arrancar desde 0
                 audioSources[index].Play();
             }
             else
             {
-                // Arrancar en el mismo punto que la pista maestra
                 audioSources[index].timeSamples = audioSources[0].timeSamples;
                 audioSources[index].Play();
             }
         }
 
-        // Subir volumen de todas las pistas que ya arrancaron (fade suave)
         for (int i = 0; i <= index; i++)
         {
             if (hasStarted[i])
