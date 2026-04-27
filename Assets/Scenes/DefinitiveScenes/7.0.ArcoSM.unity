@@ -2615,7 +2615,7 @@ MonoBehaviour:
   - Valentia
   - J.J
   - Valentia
-  - Lorca
+  - Federico
   - Valentia
   - J.J
   - Valentia
@@ -2624,7 +2624,7 @@ MonoBehaviour:
   - J.J
   - Valentia
   - Valentia
-  - Lorca
+  - Federico
   - J.J
   - Valentia
   - J.J
@@ -2639,7 +2639,7 @@ MonoBehaviour:
   - J.J
   - Valentia
   - Valentia
-  - Lorca
+  - Federico
   - Valentia
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
@@ -3257,7 +3257,7 @@ MonoBehaviour:
     por Ochoa de Arteaga y representan ilustres figuras como el Cid o Diego Porcelos.  '
   characterName:
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}

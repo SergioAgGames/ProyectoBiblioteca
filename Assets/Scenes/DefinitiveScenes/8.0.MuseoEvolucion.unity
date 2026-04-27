@@ -1577,26 +1577,26 @@ MonoBehaviour:
   - "\xBFQu\xE9 dijo? "
   characterName:
   - J.J
-  - Lorca
+  - Federico
   - J.J
-  - Lorca
+  - Federico
   - Miguelon
   - J.J
   - Miguelon
-  - Lorca
+  - Federico
   - J.J
   - J.J
-  - Lorca
-  - Lorca
+  - Federico
+  - Federico
   - J.J
-  - Lorca
-  - Lorca
+  - Federico
+  - Federico
   - J.J
   - J.J
   - J.J
-  - Lorca
+  - Federico
   - J.J
-  - Lorca
+  - Federico
   - Miguelon
   - Miguelon
   - J.J
@@ -4320,9 +4320,9 @@ MonoBehaviour:
   - "Y tambi\xE9n eran peluditos, s\xED."
   characterName:
   - J.J
-  - Lorca
+  - Federico
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}

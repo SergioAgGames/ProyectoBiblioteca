@@ -1284,7 +1284,7 @@ MonoBehaviour:
     era mucho m\xE1s impresionante."
   characterName:
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   - "Puede que dentro de ellos se esconda otro drag\xF3n esperando ser descubierto. "
   characterName:
   - J.J
-  - Lorca
+  - Federico
   - J.J
   - "Drag\xF3n"
   - J.J
@@ -2464,7 +2464,7 @@ MonoBehaviour:
   - J.J
   - "Drag\xF3n"
   - "Drag\xF3n"
-  - Lorca
+  - Federico
   - "Drag\xF3n"
   - "Drag\xF3n"
   - J.J
@@ -2479,16 +2479,16 @@ MonoBehaviour:
   - J.J
   - "Drag\xF3n"
   - "Drag\xF3n"
-  - Lorca
+  - Federico
   - "Drag\xF3n"
   - "Drag\xF3n"
   characterSprite:
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 5641794162817385645, guid: a42a0785751021548876e7001354c5c4, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -3571376909365637165, guid: 9f6131552c05c2046ac86ac46214666b, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -3571376909365637165, guid: 9f6131552c05c2046ac86ac46214666b, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
   - {fileID: 5641794162817385645, guid: a42a0785751021548876e7001354c5c4, type: 3}

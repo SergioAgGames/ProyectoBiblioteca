@@ -3536,13 +3536,13 @@ MonoBehaviour:
   - J.J
   - Ulises
   - Ulises
-  - Lorca
+  - Federico
   - Ulises
   - Ulises
-  - Lorca
+  - Federico
   - J.J
   - Ulises
-  - Lorca
+  - Federico
   - Ulises
   - J.J
   - Ulises
@@ -3552,7 +3552,7 @@ MonoBehaviour:
   - J.J
   - J.J
   - Ulises
-  - Lorca
+  - Federico
   - Ulises
   - Ulises
   - J.J
@@ -4745,9 +4745,9 @@ MonoBehaviour:
   - "Seguramente fuese Ulises de qui\xE9n hablas, pertenece a un libro llamado la
     Odisea."
   characterName:
-  - Lorca
+  - Federico
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
@@ -7645,7 +7645,7 @@ MonoBehaviour:
   - "Es \xFAtil para saber la hora."
   characterName:
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
@@ -9244,7 +9244,7 @@ MonoBehaviour:
   - "Seguro que si te esfuerzas lograr\xE1s ser alguien c\xF3mo el. "
   characterName:
   - J.J
-  - Lorca
+  - Federico
   characterSprite:
   - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
