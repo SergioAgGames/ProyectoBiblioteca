@@ -3131,9 +3131,9 @@ MonoBehaviour:
   - J.J
   characterSprite:
   - {fileID: -5332831142983742163, guid: 56ea216b979e6c742a3e8d623f2342e8, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   textPanel: {fileID: 51174341}
   namePanel: {fileID: 856729828}
   spritePanel: {fileID: 1548029592}

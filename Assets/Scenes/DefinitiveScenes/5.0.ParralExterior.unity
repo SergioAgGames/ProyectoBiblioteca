@@ -278,9 +278,9 @@ MonoBehaviour:
   - Federico
   - J.J
   characterSprite:
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   textPanel: {fileID: 1364280123}
   namePanel: {fileID: 1174802179}
   spritePanel: {fileID: 320608972}

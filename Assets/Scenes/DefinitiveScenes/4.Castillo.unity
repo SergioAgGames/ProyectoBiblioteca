@@ -1286,7 +1286,7 @@ MonoBehaviour:
   - J.J
   - Federico
   characterSprite:
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   textPanel: {fileID: 372586745}
   namePanel: {fileID: 501565522}
@@ -2486,30 +2486,30 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
   - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
-  - {fileID: -3571376909365637165, guid: 9f6131552c05c2046ac86ac46214666b, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
   - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
-  - {fileID: -3571376909365637165, guid: 9f6131552c05c2046ac86ac46214666b, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 5641794162817385645, guid: a42a0785751021548876e7001354c5c4, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
-  - {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
   - {fileID: 4085817070537380454, guid: cd2bb235ae887554eb98a15f68390a6f, type: 3}
-  - {fileID: 1372335161102834277, guid: 25b1b45fb3c39dd4585e88e9c418e3b9, type: 3}
-  - {fileID: -8072827117136029152, guid: e206e7aa489ed594f9b01573fefe6db5, type: 3}
+  - {fileID: -2074852544528507442, guid: 2b9cefced92164547924c9ac609f107a, type: 3}
+  - {fileID: -4992764652108358279, guid: f23e24601f32296438705667d264cded, type: 3}
   textPanel: {fileID: 1220273517}
   namePanel: {fileID: 1012370748}
   spritePanel: {fileID: 2084665879}
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
