@@ -103,10 +103,10 @@ TextureImporter:
       name: Crispinv2_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 282
-        width: 173
-        height: 223
+        x: 22
+        y: 260
+        width: 178
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

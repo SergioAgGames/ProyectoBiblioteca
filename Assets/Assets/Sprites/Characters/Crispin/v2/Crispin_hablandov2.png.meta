@@ -103,10 +103,10 @@ TextureImporter:
       name: Crispin_hablandov2_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 282
-        width: 194
-        height: 222
+        x: 0
+        y: 260
+        width: 200
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
