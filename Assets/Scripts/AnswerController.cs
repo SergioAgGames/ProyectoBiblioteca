@@ -1,11 +1,12 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System; // Es necesario añadir esto para usar StringComparison
 
 public class AnswerController : MonoBehaviour
 {
     [SerializeField] private GameObject AnswerPanel;
-   
+
     [SerializeField] private int answerLine;
 
     [SerializeField] private InputField inputText;
@@ -19,10 +20,9 @@ public class AnswerController : MonoBehaviour
     {
         TextValidate();
     }
+
     public void ActivateAnswerPanel(int index)
     {
-
-
         if (index == answerLine)
         {
             AnswerPanel.SetActive(true);
@@ -31,7 +31,6 @@ public class AnswerController : MonoBehaviour
         else
         {
             AnswerPanel.SetActive(false);
-
             textController.continueButton.interactable = true;
         }
     }
@@ -42,18 +41,18 @@ public class AnswerController : MonoBehaviour
 
         if (!AnswerPanel.activeSelf) return;
 
-        if (inputText.text == playerAnswer)
+     
+        if (string.Equals(inputText.text, playerAnswer, StringComparison.OrdinalIgnoreCase))
         {
             correctText = true;
             Debug.Log("[AnswerController] Respuesta correcta");
 
             textController.continueButton.interactable = true;
-            
+
             if (MinimapScript.Instance != null)
             {
                 MinimapScript.Instance.CompleteCurrentScene();
             }
-           
         }
     }
 }

@@ -299,7 +299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -290.62, y: -124.291016}
+  m_AnchoredPosition: {x: -179.8, y: -124.291016}
   m_SizeDelta: {x: 389.528, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &70511616
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1440, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BUSCA LA SIGNATURA
+  m_text: Haz click aqui para introducir el nombre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -1200,8 +1200,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -1235,7 +1235,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &887389683
@@ -1515,8 +1515,8 @@ Transform:
   m_GameObject: {fileID: 959758014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -1.31, z: 0.92915344}
-  m_LocalScale: {x: 0.44634485, y: 0.4466924, z: 1.0007961}
+  m_LocalPosition: {x: -0.4198, y: -1.29, z: 0.92915344}
+  m_LocalScale: {x: 0.3306688, y: 0.4466924, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1727176648}
@@ -1582,7 +1582,7 @@ MonoBehaviour:
   m_text: J.J
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1821,7 +1821,7 @@ Transform:
   m_GameObject: {fileID: 1012370748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -317.15396, y: 75.929474, z: 0}
+  m_LocalPosition: {x: -77.1, y: 75.929474, z: 0}
   m_LocalScale: {x: 2.2119818, y: 2.2119818, z: 2.2119818}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2248,7 +2248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pulsa sobre la barra para introducirla
+  m_Text: Pulsa sobre la barra para introducir el nombre
 --- !u!222 &1151361813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1440, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2444,8 +2444,8 @@ MonoBehaviour:
   - " Gracias\u2026 creo. "
   - "Si quieres que vuelva, tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
-  - "Las cuatro lunas, de Laura Gallego. Su c\xF3digo es I-FAN GAL cua. "
-  - INTRODUCE EL CODIGO
+  - 'Las cuatro lunas. Su signatura es I-FAN GAL cua. '
+  - Introduce el nombre del autor/a
   - "Aqu\xED est\xE1. "
   - "Perfecto\u2026 el camino de regreso.  "
   - " \xBFVolver\xE1s a tu historia?"
@@ -2541,7 +2541,7 @@ MonoBehaviour:
   AnswerPanel: {fileID: 2089127384}
   answerLine: 18
   inputText: {fileID: 2079156625}
-  playerAnswer: HOLA
+  playerAnswer: Laura Gallego
   correctText: 0
   textController: {fileID: 1299892399}
 --- !u!61 &1299892401
@@ -2755,8 +2755,8 @@ Transform:
   m_GameObject: {fileID: 1299892398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.57, y: -150.14, z: 0.92915344}
-  m_LocalScale: {x: 0.41289556, y: 0.2765888, z: 1.0007961}
+  m_LocalPosition: {x: 58.7616, y: -150.5052, z: 0.92915344}
+  m_LocalScale: {x: 0.37312266, y: 0.2438407, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1141808249}
@@ -2822,7 +2822,7 @@ MonoBehaviour:
   m_text: J.J
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2924,7 +2924,7 @@ Transform:
   m_GameObject: {fileID: 1402956652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.3851, y: 148.3, z: 0}
+  m_LocalPosition: {x: -56.2, y: 148.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3145,7 +3145,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3370,7 +3370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3404,8 +3404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -161.4, y: -40.2}
-  m_SizeDelta: {x: 213.029, y: 278.6398}
+  m_AnchoredPosition: {x: -49.874462, y: -87}
+  m_SizeDelta: {x: 191.4646, y: 478.1106}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1819028515
 GameObject:
@@ -3955,8 +3955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0022125}
-  m_SizeDelta: {x: 1920, y: 1079.6}
+  m_AnchoredPosition: {x: 0, y: 6.9956}
+  m_SizeDelta: {x: 1920, y: 1453.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895852933
 MonoBehaviour:
@@ -4068,7 +4068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -168.10541, y: -89.028534}
+  m_AnchoredPosition: {x: -49.4, y: -89.028534}
   m_SizeDelta: {x: 189.86798, y: 492.353}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1908493624
@@ -4112,7 +4112,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
