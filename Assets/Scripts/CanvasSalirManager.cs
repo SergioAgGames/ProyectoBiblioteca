@@ -6,7 +6,10 @@ public class CanvasSalirManager : MonoBehaviour
 {
     
     public GameObject pantallaCanvas;
-
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Update()
     {
 
