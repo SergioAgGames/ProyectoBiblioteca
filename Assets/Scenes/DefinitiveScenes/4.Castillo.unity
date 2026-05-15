@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haz click aqui para introducir el nombre
+  m_text: Introduce el nombre del autor/a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   - "Si quieres que vuelva, tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
   - 'Las cuatro lunas. Su signatura es I-FAN GAL cua. '
-  - Introduce el nombre del autor/a
+  - 'Recuerda, el libro es: Las cuatro lunas. Su signatura es I-FAN GAL cua.'
   - "Aqu\xED est\xE1. "
   - "Perfecto\u2026 el camino de regreso.  "
   - " \xBFVolver\xE1s a tu historia?"

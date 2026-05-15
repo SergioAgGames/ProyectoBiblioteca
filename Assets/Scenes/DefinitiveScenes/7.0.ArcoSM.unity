@@ -1870,7 +1870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haz click aqui para introducir el nombre
+  m_text: Introduce el nombre del autor/a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   - " Pero si quieres que vuelva\u2026 tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
   - 'Inside Out 2. Su signatura es I DIBUJOS DVD del. '
-  - Introduce el nombre del autor/a
+  - 'Recuerda, la pelicula es: Inside Out 2. Su signatura es I DIBUJOS DVD del.  '
   - "Aqu\xED est\xE1. "
   - "\xA1Perfecto! "
   - ' Antes de irme quiero decirte algo, J.J. '

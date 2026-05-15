@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haz click aqui para introducir el nombre
+  m_text: Introduce el nombre del autor/a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -3634,7 +3634,7 @@ MonoBehaviour:
   - Entonces necesito tu libro.
   - "S\xED, s\xED\u2026 mi libro\u2026 Memorias del bosque.. Su signatura era I-ANI
     BRU mem\u2026 creo. "
-  - Introduce el nombre del autor/a
+  - Recuerda, el libro es:Memorias del bosque.. Su signatura era I-ANI BRU.
   - "\xA1Es este Ferdinand! "
   - "\xA1Bien! Sab\xEDa que esto no se me olvidar\xEDa."
   - " Parece que te est\xE1n volviendo los recuerdos. "

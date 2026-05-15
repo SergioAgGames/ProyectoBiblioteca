@@ -174,7 +174,7 @@ MonoBehaviour:
   - " \xBFCu\xE1l era? "
   - "El diario de la peste. Su signatura es I-AVE FRE d\xEDa. "
   - "Tr\xE1elo y volver\xE9 a ocupar mi lugar entre sus p\xE1ginas. "
-  - Introduce el nombre del autor/a
+  - "Recuerda, el libro es: El diario de la peste. Su signatura es I-AVE FRE d\xEDa."
   - "Aqu\xED lo tengo, Crisp\xEDn."
   - " \xA1Magn\xEDfico! Justo el libro que buscaba. "
   - " Sabes, J.J., aunque mis p\xE1ginas hablen de tiempos dif\xEDciles\u2026 "
@@ -1825,7 +1825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haz click aqui para introdcuir el nombre
+  m_text: Introduce el nombre del autor/a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -4296,8 +4296,8 @@ Transform:
   m_GameObject: {fileID: 1886669406}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6313, y: 1.62, z: 0.92915344}
-  m_LocalScale: {x: 0.3011641, y: 0.4466924, z: 1.0007961}
+  m_LocalPosition: {x: 0.6105, y: 1.62, z: 0.92915344}
+  m_LocalScale: {x: 0.30251935, y: 0.4466924, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1257130933}

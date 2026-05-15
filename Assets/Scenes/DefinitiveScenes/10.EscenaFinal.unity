@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Haz click para introducir el nombre
+  m_text: Introduce el nombre del autor/a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 7302321009375540021, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
@@ -2760,7 +2760,7 @@ MonoBehaviour:
   - "No est\xE9s triste J.J., es lo correcto. "
   - "Tr\xE1eme mi libro y volver\xE9 a formar parte de su historia. "
   - 'Mi libro es El Joven Lorca. Su signatura es I-MIS BRU Jov. '
-  - Introduce el nombre del autor/a
+  - 'Recuerda, el libro es: El Joven Lorca. Su signatura es I-MIS BRU Jov.'
   - "Perfecto. Muchas gracias por tu ayuda J.J., sin ti quien sabe si hubiese podido
     \r\nrecuperarlos a todos. "
   - " Aqu\xED tiene se\xF1or. "
