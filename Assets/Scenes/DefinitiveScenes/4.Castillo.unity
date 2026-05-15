@@ -1279,8 +1279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "\xBFY se supone que esto antes era un castillo? Si solo es un muro de piedra. "
-  - " JJ, con el paso de los a\xF1os ha ido empeorando, pero te aseguro que antes
+  - "\xBFY se supone que esto antes era un castillo? \xA1Si solo es un muro de piedra!"
+  - "JJ, con el paso de los a\xF1os ha ido desapareciendo, pero te aseguro que antes
     era mucho m\xE1s impresionante."
   characterName:
   - J.J
@@ -2444,8 +2444,8 @@ MonoBehaviour:
   - " Gracias\u2026 creo. "
   - "Si quieres que vuelva, tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
-  - 'Las cuatro lunas. Su signatura es I-FAN GAL cua. '
-  - 'Recuerda, el libro es: Las cuatro lunas. Su signatura es I-FAN GAL cua.'
+  - "Las cuatro lunas. \nSu signatura es I-FAN GAL cua. "
+  - "Recuerda, el libro es: Las cuatro lunas. \nSu signatura es I-FAN GAL cua."
   - "Aqu\xED est\xE1. "
   - "Perfecto\u2026 el camino de regreso.  "
   - " \xBFVolver\xE1s a tu historia?"

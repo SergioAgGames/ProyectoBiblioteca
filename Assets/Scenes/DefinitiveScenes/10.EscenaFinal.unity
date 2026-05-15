@@ -2723,14 +2723,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194527219}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 49.6814, y: -149.9133, z: 0.92915344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.11, y: -151.32, z: 0.92915344}
   m_LocalScale: {x: 0.16200602, y: 0.1323934, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1923223616}
   m_Father: {fileID: 954497097}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1194527222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2759,8 +2759,8 @@ MonoBehaviour:
   - " No\u2026 "
   - "No est\xE9s triste J.J., es lo correcto. "
   - "Tr\xE1eme mi libro y volver\xE9 a formar parte de su historia. "
-  - 'Mi libro es El Joven Lorca. Su signatura es I-MIS BRU Jov. '
-  - 'Recuerda, el libro es: El Joven Lorca. Su signatura es I-MIS BRU Jov.'
+  - "Mi libro es El Joven Lorca. \nSu signatura es I-MIS BRU jov. "
+  - "Recuerda, el libro es: El Joven Lorca. \nSu signatura es I-MIS BRU jov."
   - 'Perfecto. Muchas gracias por tu ayuda J.J., sin ti quien sabe si hubiese podido
     recuperarlos a todos. '
   - " Aqu\xED tiene se\xF1or. "

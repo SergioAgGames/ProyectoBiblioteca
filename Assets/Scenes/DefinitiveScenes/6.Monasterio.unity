@@ -162,19 +162,19 @@ MonoBehaviour:
     m\xE1s alegre del mundo. "
   - " Entonces\u2026 \xBFtambi\xE9n escapaste del libro como los dem\xE1s? "
   - " Digamos que\u2026 necesitaba tomar aire. "
-  - "Siento interrumpir tus vacaciones, pero\u2026 Estoy intentando devolver los
+  - "Siento interrumpir tus vacaciones, pero\u2026 estoy intentando devolver los
     personajes a sus libros. "
   - "Vaya, vaya\u2026 parece que alguien est\xE1 poniendo orden en esta historia. "
   - 'Solo intento que todo vuelva a la normalidad. '
-  - "Hmmm\u2026 eso suena bastante responsable para alguien tan joven."
+  - "Mmmm\u2026 eso suena bastante responsable para alguien tan joven."
   - "Crisp\xEDn, creo que deber\xEDas volver tambi\xE9n. "
   - "Puede que tengas raz\xF3n. Los libros necesitan a sus personajes\u2026 aunque
     a veces sus historias sean un poco oscuras. "
   - "Pero antes tendr\xE1s que traer mi libro"
-  - " \xBFCu\xE1l era? "
-  - "El diario de la peste. Su signatura es I-AVE FRE d\xEDa. "
+  - " \xBFCu\xE1l es? "
+  - "El diario de la peste. \nSu signatura es I-AVE FRE dia. "
   - "Tr\xE1elo y volver\xE9 a ocupar mi lugar entre sus p\xE1ginas. "
-  - "Recuerda, el libro es: El diario de la peste. Su signatura es I-AVE FRE d\xEDa."
+  - "Recuerda, el libro es: El diario de la peste. \nSu signatura es I-AVE FRE dia."
   - "Aqu\xED lo tengo, Crisp\xEDn."
   - " \xA1Magn\xEDfico! Justo el libro que buscaba. "
   - " Sabes, J.J., aunque mis p\xE1ginas hablen de tiempos dif\xEDciles\u2026 "
@@ -493,14 +493,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3098725}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 49.7, y: -150.52, z: 0.92915344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.28, y: -152.08, z: 0.92915344}
   m_LocalScale: {x: 0.12959717, y: 0.11569927, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 950079913}
   m_Father: {fileID: 1151766514}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251541072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,7 +2543,7 @@ Transform:
   m_GameObject: {fileID: 1151766513}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.76861, y: 148.77779, z: 90}
+  m_LocalPosition: {x: -54.76861, y: 148.77779, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3699,8 +3699,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4105,10 +4105,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Mis padres vinieron a comprar pastas aqu\xED una vez, estaban muy ricas."
-  - "Si, de normal en muchos monasterios las monjas venden diferentes tipos de dulces
-    tradicionales c\xF3mo forma de ganar un dinero extra para el lugar, al ser hechas
-    a mano con los a\xF1os han logrado mejorar su forma de hacerlas."
+  - "\xBFPor qu\xE9 se llama Monasterio de las Huelgas? \xBFEs que hac\xEDan huelga
+    y no quer\xEDan trabajar?"
+  - "S\xED, hoy en d\xEDa esa palabra significa dejar de trabajar o de ir al cole
+    para protestar, pero en la Edad Media significaba zona de campo y descanso para
+    que los reyes de Castilla vinieran aqu\xED a relajarse, al ser un sitio tan tranquilo.
+    Con los a\xF1os han logrado mantener esa paz en medio de la ciudad de Burgos."
   characterName:
   - J.J
   - Federico

@@ -157,7 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -191,8 +191,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -51.6, y: -40.2}
-  m_SizeDelta: {x: 213.029, y: 278.6398}
+  m_AnchoredPosition: {x: -44, y: -82}
+  m_SizeDelta: {x: 222.6506, y: 480.6928}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &51174341
 GameObject:
@@ -1150,8 +1150,11 @@ MonoBehaviour:
   - "Volver\xE9, joven."
   - "Pero primero tendr\xE1s que traer mi libro. "
   - "\xBFCu\xE1l es? "
-  - 'El futuro es femenino. Su signatura es I-REA CAN fut. '
-  - 'Recuerda, el libro es: El futuro es femenino. Su signatura es I-REA CAN fut.'
+  - "El futuro es femenino. \nSu signatura es I-REA CAN fut. "
+  - 'Recuerda, el libro es: El futuro es femenino.
+
+    Su signatura es I-REA CAN
+    fut.'
   - "Aqu\xED est\xE1 su libro. "
   - 'Perfecto. '
   - 'Recuerda algo, J.J. '
@@ -3118,12 +3121,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "C\xF3mo puedes presenciar \xE9ste es el mayor orgullo de esta ciudad, una maravillosa
+  - "Como puedes presenciar \xE9ste es el mayor orgullo de esta ciudad, una maravillosa
     catedral g\xF3tica. "
-  - "\xBFQu\xE9 significa g\xF3tico? "
-  - "Es un tipo de arquitectura, se puede saber por la ventana que parece una rosa
-    llamada roset\xF3n. Tambi\xE9n se puede saber por los arcos en forma de punta. "
-  - "Oh, ya veo, gracias se\xF1or Lorca."
+  - "\xBFQu\xE9 significa g\xF3tica? "
+  - "Es un tipo de arquitectura. F\xEDjate en la ventana que parece una rosa, llamada
+    roset\xF3n y en  los arcos en forma de punta."
+  - "Oh, ya veo, gracias se\xF1or Federico."
   characterName:
   - Federico
   - J.J

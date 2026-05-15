@@ -1559,20 +1559,23 @@ MonoBehaviour:
   - ...
   - "Homo heidelbergensis\u2026 m\xE1s de cuatro cientos mil a\xF1os. "
   - "Incre\xEDble\u2026 "
-  - "Pero se\xF1or Federico\u2026 pero \xBFc\xF3mo se supone que voy a ayudarle? "
-  - Hay historias que no necesitan palabras para ser contadas J.J
+  - "Pero se\xF1or Federico\u2026 \xBFc\xF3mo se supone que voy a ayudarle? "
+  - Hay historias que no necesitan palabras para ser contadas J.J.
   - "Estoy seguro de que Miguel\xF3n estar\xE1 por la labor de volver a su historia. "
   - "Entonces buscar\xE9 el libro."
-  - 'Su libro es Recorre el cuerpo humano. Su signatura es I-611 MAR rec. '
-  - "Cuando lo tengas, la historia volver\xE1 a completarse"
-  - 'Recuerda, el libro es: Recorre el cuerpo humano. Su signatura es I-611 MAR rec.'
+  - "Su libro es Recorre el cuerpo humano. \nSu signatura es I-611 MAR rec. "
+  - "Cuando lo tengas, la historia volver\xE1 a completarse."
+  - 'Recuerda, el libro es: Recorre el cuerpo humano.
+
+    Su signatura es I-611
+    MAR rec.'
   - "Aqu\xED est\xE1 el libro. "
   - "Parece que est\xE1 funcionando\u2026"
   - "Incluso los restos m\xE1s antiguos tienen una historia que contar. "
   - 'Y ahora vuelve a su lugar. '
-  - Parece que quiere decir algo
+  - Parece que quiere decir algo.
   - ...
-  - "Uhga Buga (\xA1Muchas gracias!) "
+  - "Uhga Buga (\xA1Muchas gracias!)."
   - "\xBFQu\xE9 dijo? "
   characterName:
   - J.J
@@ -1804,14 +1807,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573936125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 52.42, y: -150.18, z: 0.92915344}
-  m_LocalScale: {x: 0.14050926, y: 0.12298832, z: 1.0007961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.91, y: -150.81, z: 0.92915344}
+  m_LocalScale: {x: 0.134088, y: 0.107971445, z: 1.0007961}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1285510504}
   m_Father: {fileID: 744457483}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &578336210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,12 +4314,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Mis padres me trajeron un d\xEDa a este sitio, me gustaron mucho los animales
+  - "Mis padres me trajeron un d\xEDa a este museo. Me gustaron mucho los animales
     con colmillos que se parecen a elefantes."
-  - "Se llaman mamuts, eran criaturas fascinantes y muy fuertes. Pod\xEDan ganar
-    contra la mayor\xEDa de las amenazas de su \xE9poca."
-  - "Y tambi\xE9n eran peluditos."
-  - "Y tambi\xE9n eran peluditos, s\xED."
+  - 'Se llaman mamuts, eran criaturas fascinantes y muy fuertes. '
+  - "\xA1Y tambi\xE9n eran peluditos!"
+  - "\xA1Y tambi\xE9n eran peluditos, s\xED!"
   characterName:
   - J.J
   - Federico

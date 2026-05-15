@@ -2591,17 +2591,17 @@ MonoBehaviour:
   - "Entonces\u2026 \xBFtambi\xE9n escapaste de tu libro? "
   - "M\xE1s bien me escap\xE9 de la cabeza de alguien. "
   - 'Eso suena complicado. '
-  - 'Lo es un poco. '
+  - Si, un poco.
   - "Pero oye, salir a pasear por Burgos tampoco est\xE1 tan mal. "
   - "Sin embargo, tu historia tambi\xE9n necesita continuar. "
   - Estoy devolviendo a todos los personajes a sus libros.
   - "\xA1Eso s\xED que requiere valent\xEDa!"
   - "Bueno\u2026 alguien tiene que hacerlo."
-  - Me gusta tu actitud
-  - " Pero si quieres que vuelva\u2026 tendr\xE1s que traer mi libro. "
+  - Me gusta tu actitud.
+  - " Pero si quieres que vuelva\u2026 tendr\xE1s que traer mi pel\xEDcula. "
   - "\xBFCu\xE1l es? "
-  - 'Inside Out 2. Su signatura es I DIBUJOS DVD del. '
-  - 'Recuerda, la pelicula es: Inside Out 2. Su signatura es I DIBUJOS DVD del.  '
+  - "Inside Out 2. \nSu signatura es I DIBUJOS DVD del. "
+  - "Recuerda, la pelicula es: Inside Out 2. \nSu signatura es I DIBUJOS DVD del.  "
   - "Aqu\xED est\xE1. "
   - "\xA1Perfecto! "
   - ' Antes de irme quiero decirte algo, J.J. '
@@ -3253,7 +3253,7 @@ MonoBehaviour:
   dialogueLines:
   - 'Siempre me han gustado las estatuas que hay en esta puerta, son muy llamativas. '
   - 'Y no es para menos J.J, esta bonita fachada fue creada en el siglo XV por Francisco
-    de Colonia y Juan de Vallejo. Las bonitas estatuas de las que hablas fueron creadas
+    de Colonia y Juan de Vallejo. Las bonitas estatuas de las que hablas fueron talladas
     por Ochoa de Arteaga y representan ilustres figuras como el Cid o Diego Porcelos.  '
   characterName:
   - J.J

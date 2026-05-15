@@ -482,13 +482,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\n\n\n\n\n\nProyecto creado para\r\n\r\nBiblioteca p\xFAblica
+  m_text: "\n\n\n\n\n\n\n\n\n\nProyecto creado para\r\n\r\nBiblioteca P\xFAblica
     de Burgos\r\n\r\nUniversidad de Burgos\n                        <size=300%><sprite=0></size>\n\r\n\n\n\n\n\n\n\n\n\n\r\nArte\r\n\r\nDiego
     Guti\xE9rrez Est\xE9vez\r\n\r\nGuion\r\n\r\nDaniel \xC1lvarez Barjacoba\r\n\r\nProgramaci\xF3n\r\n\r\nSergio
     Aguado Pascual\r\n\r\nM\xFAsica y sonido\r\n\r\nDaniel \xC1lvarez Barjacoba\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\nReferencias
     bibliogr\xE1ficas\r\n\r\n\u201CEl diario de la Peste\u201D Espido Freire\r\n\u201CMemorias
     del bosque\u201D Mickael Brun-Arnaud\r\n\u201CEl joven Lorca\u201D Luna Bruna\r\nSaga
-    \u201CCuatro lunas\u201D Laura Gallego\r\n\u201CLa odisea\u201D Manuela Adreani\r\n\u201CEl
+    \u201CCuatro lunas\u201D Laura Gallego\r\n\u201CLa odisea\u201D Homero\r\n\u201CEl
     futuro es femenino\u201D Sara Cano Fern\xE1ndez\r\n\u201CRecorre el cuerpo humano\u201D
     Bel\xE9n Martul\r\n\u201CDel Rev\xE9s 2\u201D Disney\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\xA1Gracias
     Por Jugar!\r\n"

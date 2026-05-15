@@ -1393,8 +1393,8 @@ MonoBehaviour:
   dialogueLines:
   - "Esta casa lleva mucho tiempo aqu\xED, pero ya no vive nadie en ella."
   - Es un bonito lugar para tener una casa, rodeado de naturaleza. Un lugar perfecto
-    para tener una vida tranquila.
-  - "Ojal\xE1 tener una casa en un lugar parecido alg\xFAn d\xEDa, pero mi padre
+    para llevar una vida tranquila
+  - "Ojal\xE1 yo tenga una casa en un lugar parecido alg\xFAn d\xEDa, pero mi padre
     dice que es complicado conseguir una hoy en d\xEDa."
   - "Tu padre tiene raz\xF3n, pero no pierdas la esperanza."
   characterName:
@@ -2453,7 +2453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8598631743318598010, guid: 4a6e1abefffebf04e91ff0542c1032cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3290f99716840f48b027407c8e02a1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2487,8 +2487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -47.9, y: -40.2}
-  m_SizeDelta: {x: 213.029, y: 278.6398}
+  m_AnchoredPosition: {x: -49.349915, y: -83.69752}
+  m_SizeDelta: {x: 209.8218, y: 471.0713}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1533626076
 GameObject:
@@ -2662,7 +2662,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: J.J
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fb2eddbc3d1999248a9f13767bd58b2b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: -8804317963505724361, guid: fb2eddbc3d1999248a9f13767bd58b2b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1625420122
@@ -3608,7 +3608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "\xA1Mire se\xF1or Federico!\xA1Un topo! "
+  - "\xA1Mire se\xF1or Federico! \xA1Un topo! "
   - Un respeto joven.
   - "\xA1Un topo que habla! "
   - "S\xED, s\xED\u2026 lo s\xE9. Es sorprendente. "
@@ -3624,7 +3624,7 @@ MonoBehaviour:
   - "Eso explicar\xEDa muchas cosas. "
   - "\xBFComo qu\xE9? "
   - "Como por qu\xE9 s\xE9 hablar\u2026 "
-  - "O por qu\xE9 no recuerdo haber pagado nunca el alquiler de esta madriguera. "
+  - "O por qu\xE9 no recuerdo haber pagado nunca el alquiler de esta \nmadriguera. "
   - 'Estoy devolviendo a todos los personajes a sus libros. '
   - "\xBFVolver a mi historia? "
   - 'Suena bien. '
@@ -3632,16 +3632,19 @@ MonoBehaviour:
   - " \xBFUsas gafas? "
   - "No\u2026 pero seguro que perd\xED unas igualmente. "
   - Entonces necesito tu libro.
-  - "S\xED, s\xED\u2026 mi libro\u2026 Memorias del bosque.. Su signatura era I-ANI
-    BRU mem\u2026 creo. "
-  - Recuerda, el libro es:Memorias del bosque.. Su signatura era I-ANI BRU.
+  - "S\xED, s\xED\u2026 mi libro\u2026 Memorias del bosque.\nSu signatura era I-ANI
+    BRU mem I\u2026 creo. "
+  - 'Recuerda, el libro es: Memorias del bosque.
+
+    Su signatura era I-ANI BRU
+    mem I.'
   - "\xA1Es este Ferdinand! "
   - "\xA1Bien! Sab\xEDa que esto no se me olvidar\xEDa."
   - " Parece que te est\xE1n volviendo los recuerdos. "
   - "S\xED\u2026 el bosque, mis amigos\u2026 "
   - "Y creo que tambi\xE9n record\xE9 algo importante."
   - "\xBFEl qu\xE9? "
-  - " Que no deber\xEDa haberme comido ese gusano hace cinco minutos."
+  - " Que no deber\xEDa haberme comido ese gusano hace cinco \nminutos."
   - "\xBFEh? "
   - " S\xED\u2026 y creo que era mi marcap\xE1ginas. "
   - " Bueno G.G. gracias por tu ayuda, \xA1nos vemos!"
@@ -4565,8 +4568,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0

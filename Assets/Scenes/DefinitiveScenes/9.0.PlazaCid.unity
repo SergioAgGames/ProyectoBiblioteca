@@ -995,7 +995,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2898,7 +2898,7 @@ MonoBehaviour:
   AnswerPanel: {fileID: 27054597}
   answerLine: 22
   inputText: {fileID: 560805775}
-  playerAnswer: Manuela Adreani
+  playerAnswer: Homero
   correctText: 0
   textController: {fileID: 598506798}
 --- !u!114 &598506798
@@ -2915,8 +2915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
   - "Disculpe\u2026 \xBFse encuentra bien?"
-  - "He atravesado mares, tormentas y criaturas imposibles\u2026 y aun as\xED, muchacho,
-    estoy bien."
+  - "He atravesado mares, tormentas y he encontrado criaturas imposibles\u2026 y
+    aun as\xED, muchacho, estoy bien."
   - "Espera\u2026 \xBFUlises? "
   - "Veo que mi nombre se conoce tambi\xE9n aqu\xED. "
   - "\xA1Claro! Eres el h\xE9roe de La Odisea. "
@@ -2926,7 +2926,7 @@ MonoBehaviour:
   - "Digamos que despert\xE9\u2026 en una tierra desconocida. "
   - 'Esta es Burgos. '
   - "Burgos\u2026 interesante. "
-  - 'Ese guerrero de piedra parece un hombre digno de compartir historias de batalla. '
+  - 'Ese guerrero de piedra parece un hombre digno de compartir historias de batallas. '
   - "Ulises siempre ha sentido debilidad por los h\xE9roes. "
   - 'Ulises, estoy intentando devolver a todos los personajes a sus libros. '
   - " \xBFVolver\u2026 despu\xE9s de haber visto un nuevo mundo?"
@@ -2936,8 +2936,8 @@ MonoBehaviour:
   - "Puede que tengas raz\xF3n, muchacho. "
   - " Ning\xFAn h\xE9roe abandona su historia antes de tiempo. "
   - "Pero si quieres que vuelva\u2026 tendr\xE1s que traer mi libro. "
-  - "La Odisea. Su c\xF3digo es I-AVE HOM odi. "
-  - "Recuerda, el libro es: La Odisea. Su c\xF3digo es I-AVE HOM odi. "
+  - "La Odisea. \nSu signatura es I-AVE HOM odi. "
+  - "Recuerda, el libro es: La Odisea. \nSu signatura es I-AVE HOM odi. "
   - "Aqu\xED est\xE1, Ulises. "
   - "Perfecto\u2026 el camino de regreso. "
   - "Parece que tu viaje contin\xFAa, viejo navegante. "
@@ -3484,7 +3484,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d9b6f8772c91054aac461aec1446f8b, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3509,8 +3509,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3551,7 +3551,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &713670723
@@ -4084,11 +4084,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Mira JJ, aqu\xED es donde se realizan obras de alta calidad, d\xF3nde personas
-    que se han preparado por mucho tiempo muestran a los interesados historias de
-    todo tipo."
+  - "Mira JJ, aqu\xED es donde se representan obras de teatro, se dan conciertos,
+    conferencias y se hacen presentaciones de libros."
   - Eso suena impresionante, una vez mis padres me trajeron a ver una obra sobre
-    un tipo griego que estaba haciendo un viaje con muchos peligros.
+    un tipo griego que estaba haciendo un viaje muy peligroso.
   - "Seguramente fuese Ulises de qui\xE9n hablas, pertenece a un libro llamado la
     Odisea."
   characterName:
@@ -5521,7 +5520,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -6896,8 +6895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Siempre miro la hora en ese reloj cu\xE1ndo paso por aqu\xED, llama mucho la
-    atenci\xF3n, pero no tanto c\xF3mo la estatua del Cid."
+  - "Siempre miro la hora en ese reloj cuando paso por aqu\xED, llama mucho la atenci\xF3n,
+    pero no tanto como la estatua del Cid."
   - "Es \xFAtil para saber la hora."
   characterName:
   - J.J
@@ -8479,9 +8478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   dialogueLines:
-  - "Esta es mi estatua favorita de Burgos, es muy bonita y guay. Ojal\xE1 ser alguien
-    as\xED de mayor."
-  - "Seguro que si te esfuerzas lograr\xE1s ser alguien c\xF3mo el. "
+  - "Esta es mi estatua favorita de Burgos, es muy bonita y guay. Me gustar\xEDa
+    ser como el cid de mayor "
+  - "Seguro que si te esfuerzas lograr\xE1s ser alguien como el. "
   characterName:
   - J.J
   - Federico
@@ -9349,7 +9348,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
